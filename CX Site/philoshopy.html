@@ -21,9 +21,9 @@
                 </div>
             </div>
         </div>
-        <header class="header-main about-us-transparent">
+        <header class="header-main">
             <div class="header-left">
-                <a href="#" class="logo about-logo-color">
+                <a href="#" class="logo">
                     <svg width="131" height="28" viewBox="0 0 131 28" fill="currentcolor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -56,16 +56,16 @@
             </div>
             <div class="header-right">
                 <nav>
-                    <a href="#" class="header-nav-link about-nav-font">models</a>
-                    <a href="about.html" class="header-nav-link about-nav-font">about</a>
-                    <a href="philoshopy.html" class="header-nav-link about-nav-font">philosophy</a>
-                    <a href="contact.html" class="header-nav-link about-nav-font">contact</a>
-                    <a href="#" class="header-nav-button about-nav-button-color" style="opacity: 1;">
+                    <a href="#" class="header-nav-link">models</a>
+                    <a href="about.html" class="header-nav-link">about</a>
+                    <a href="#" class="header-nav-link">philosophy</a>
+                    <a href="contact.html" class="header-nav-link">contact</a>
+                    <a href="#" class="header-nav-button" style="opacity: 1;">
                         <div class="nav-btn-text">
                             work with indicom
                         </div>
                         <div class="nav-btn-arrow">
-                            <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649ebf1681209cf058b8c8b3_Arrow%20(1).svg"
+                            <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649ea5aad510e5cbb18b7339_Arrow.svg"
                                 loading="lazy" data-w-id="b73bbdb6-94fe-2242-6b98-7036205750fa" alt=""
                                 class="arrow-icon"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -73,7 +73,48 @@
                     </a>
                 </nav>
             </div>
+
+            <div class="header-right-mobile">
+
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu-btn">
+                    <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 11L32 11V12L16 12V11ZM16 16L32 16V17H16V16Z" fill="currentcolor"></path>
+                        <rect x="0.5" y="0.5" width="47" height="27" rx="13.5" stroke="currentcolor"></rect>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu-overlay" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-item-wrapper">
+                        <div class="mobile-menu-item" id="mobileModelsToggle">
+                            <span>Models</span>
+                            <span class="plus-icon"><img
+                                    src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a40fce725716ff8d6b3873_Plus.svg"
+                                    alt=""></span>
+                        </div>
+                        <div class="mobile-submenu" id="mobileModelsSubmenu">
+                            <a href="#" class="mobile-submenu-item">All models</a>
+                            <a href="#" class="mobile-submenu-item">Nomi</a>
+                            <a href="#" class="mobile-submenu-item">Axis</a>
+                            <a href="#" class="mobile-submenu-item">Rho</a>
+                            <a href="#" class="mobile-submenu-item">TG-2</a>
+                            <a href="#" class="mobile-submenu-item">Paloma</a>
+                            <a href="#" class="mobile-submenu-item">Ethy</a>
+                            <a href="#" class="mobile-submenu-item">Omega</a>
+                            <a href="#" class="mobile-submenu-item">Kion</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="mobile-menu-item">About</a>
+                    <a href="#" class="mobile-menu-item">Philosophy</a>
+                    <a href="#" class="mobile-menu-item">Contact</a>
+                </div>
+            </div>
         </header>
+
         <!-- === models dropdown start === -->
         <div class="models-dropdown" id="modelsDropdown">
             <div class="models-one">
@@ -155,266 +196,282 @@
         <div id="smooth-wrapper">
             <div id="smooth-content">
 
-                <!-- === about banner start === -->
-                <div class="section about-section">
-                    <div class="a-layout-grid about-hero-grid">
-                        <div class="about-text">
-                            <p class="text-colour-white">"Combining their unique abilities, this father and son duo
-                                established Indecom Furniture design"</p>
+                <!-- === philoshopy section 1 start === -->
+
+                <div class="philoshopy-section-1">
+                    <div class="philoshopy-section-1-text">
+                        <div class="philoshopy-section-1-text-block">
+                            <h4>Every piece of furniture we design is a testimony to our
+                                <span class="style-cursive">relentless pursuit</span>
+                                of excellence.
+                            </h4>
+                            <p class="philoshopy-section-1-text-block-small">New designs have to meet many different
+                                demands, often conflicting. Nice to look at, good price point, sitting well, meeting or
+                                exceeding strength standards, and so on! Balancing and tailoring these requirements to
+                                specific furniture manufacturers and end users is an ongoing challenge.</p>
                         </div>
-                        <div class="heading-div about-page">
-                            <h1 class="text-colour-white">
-                                Bound by an
-                            </h1>
-                            <h1 class="text-colour-white"><span class="serif margin-21 style-cursive">
-                                    Unshakable Passion
-                                </span></h1>
-                            <h1 class="text-colour-white">for Design</h1>
-                        </div>
+                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e970c0134c5767c5c5e_Philosophy-hero-4.webp"
+                            alt="" class="philoshopy-section-1-img-1 parallax-img" data-mouse-speed="2">
+                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e97db22f93eed44cca7_Philosophy-hero-2.webp"
+                            alt="" class="philoshopy-section-1-img-2 parallax-img" data-mouse-speed="3">
+                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e97a87a47d6f5785db9_Philosophy-hero-3.webp"
+                            alt="" class="philoshopy-section-1-img-3 parallax-img" data-mouse-speed="4">
+                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e977be34f3a7d37fd26_Philosophy-hero-5-p-800.webp"
+                            alt="" class="philoshopy-section-1-img-4 parallax-img" data-mouse-speed="2">
+                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e9cb1af8952d07bc8b8_Philosophy-hero-1-p-800.webp"
+                            alt="" class="philoshopy-section-1-img-5 parallax-img" data-mouse-speed="5">
                     </div>
                 </div>
-                <!-- === about banner end === -->
 
-                <!-- about section 2 start -->
-                <div class="section">
+                <!-- === philoshopy section 1 end === -->
+
+                <!-- === philoshopy section 2 start === -->
+                <div class="philoshopy-section-2">
                     <div class="container">
-                        <div class="space-80"></div>
+                        <div class="space-100"></div>
                         <div class="about-section-2-grid">
-                            <div class="about-section-2-left">The Indecom Story</div>
+                            <div class="about-section-2-left">What sets Indecom apart</div>
                             <div class="about-section-2-right">
-                                <div class="">1950s</div>
+                                <div class="">01</div>
                                 <div class="about-section-2-line"></div>
-                                <div class="">1950s</div>
+                                <div class="">03</div>
                             </div>
                         </div>
-                        <div class="about-section-2-history">
-                            <div class="about-section-2-history-left">
-                                <div class="about-section-2-history-left-one">
-                                    <h2 class="about-section-2-year">1950s</h2>
-                                </div>
-                                <div class="about-section-2-history-left-two">
-                                    <p class="about-section-2-text-style">Born in the lush landscapes of West Java,
-                                        Indonesia, Just Meyer found his way
-                                        back to the Netherlands with his family in the 1950s. After immersing himself in
-                                        the study of architecture, he was irresistibly drawn towards the enchanting
-                                        world of furniture design. The ensuing journey saw him create an impressive
-                                        array of historical designs for KEMBO Furniture Company from the mid-1960s until
-                                        1989.</p>
-                                    <div class="about-section2-imtro-location">
-                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a0113fab26229b17aed941_location-dot-regular%201.svg"
-                                            alt="">
-                                        <div class="about-section2-imtro-location-text">West Java, Indonesia</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-section-2-history-right">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b4b275c16702ba4d3f_1950-Dolma.webp"
-                                    alt="" class="about-section2-history-right-img-small">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b526067bbd588ef30b_1950-Just.webp"
-                                    alt="" class="about-section2-history-right-img-large">
-                            </div>
-
-                        </div>
-                        <div class="about-section-2-history">
-                            <div class="about-section-2-history-left">
-                                <div class="about-section-2-history-left-one">
-                                    <h2 class="about-section-2-year">1989s</h2>
-                                </div>
-                                <div class="about-section-2-history-left-two">
-                                    <p class="about-section-2-text-style">The year 1989 marked a pivotal moment in the
-                                        Meyer legacy when Just and Eelco came together to found Indecom Design. Starting
-                                        in Europe, but soon finding licensees across the world and establishing
-                                        themselves as international designers of furniture.</p>
-                                    <div class="about-section2-imtro-location">
-                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a0113fab26229b17aed941_location-dot-regular%201.svg"
-                                            alt="">
-                                        <div class="about-section2-imtro-location-text">West Java, Indonesia</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-section-2-history-right">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b583b90392da1f116f_1989-Myto.webp"
-                                    alt="" class="about-section2-history-right-img-large">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b608379c19105b1562_1989-Kion.webp"
-                                    alt="" class="about-section2-history-right-img-small">
-                            </div>
-
-                        </div>
-                        <div class="about-section-2-history about-sec-2-border-none">
-                            <div class="about-section-2-history-left">
-                                <div class="about-section-2-history-left-one">
-                                    <h2 class="about-section-2-year">2023s</h2>
-                                </div>
-                                <div class="about-section-2-history-left-two">
-                                    <p class="about-section-2-text-style">Over the years, we've launched myriad
-                                        successful product ranges that have reached every corner of the globe, forming a
-                                        robust network of partners. We have license agreements spanning continents -
-                                        Europe, Africa, and America - each a testament to our shared commitment to bring
-                                        the best of design to the world.
-                                        <br>
-                                        <br>
-                                        The vision was and still is to design recognizable and idiosyncratic products
-                                        which combine surprising simplicity with intelligence.
-                                    </p>
-                                    <div class="about-section2-imtro-location">
-                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a0113fab26229b17aed941_location-dot-regular%201.svg"
-                                            alt="">
-                                        <div class="about-section2-imtro-location-text">West Java, Indonesia</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-section-2-history-right">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b53a0a0152e8bf71d7_2023-Nomi.webp"
-                                    alt="" class="about-section2-history-right-img">
-                            </div>
-
-                        </div>
-                        <div class="space-80"></div>
-                    </div>
-                </div>
-                <!-- about section 2 end   -->
-
-                <!-- about section 3 start -->
-                <div class="section about-section-3">
-                    <div class="about-section-3-grid">
-                        <div class="about-section-3-grid-left">
-                            <div class="about-section-3-grid-left-text-container">
-                                <h3 class="about-section-3-grid-left-big-text">
-                                    “Designing something is like a puzzle: a constant search for the most adequate
-                                    solution. Design, functionality, and comfort while keeping in mind price and
-                                    sustainability is essential.”
-                                </h3>
-                                <div class="about-section-3-grid-left-small-text-container">Just Meyer</div>
-                            </div>
-                        </div>
-                        <div class="about-section-3-grid-right">
-                            <div class="about-section-3-grid-right-center-img">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a56998f0a3977d20d3c267_Design%20sketch.png"
+                        <div class="philoshopy-section-2-card-grid">
+                            <div class="philoshopy-section-2-card-grid-left">
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e97cf717a5574e1203c_What%20set%20Indecom%20apart-1.webp"
                                     alt="">
                             </div>
-                            <div class="about-section-3-grid-right-img-text">Photo: Becker Brakel</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- about section 3 end   -->
-
-                <!-- about section 4 start -->
-                <div class="section about-section-4">
-                    <div class="container">
-                        <div class="height-space-160"></div>
-                        <div class="about-section-4-padding-left">
-                            <div class="about-section-4-grid">
-                                <div class="about-section-4-grid-left">
-                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b5b275c16702ba4de7_Process-1.webp"
-                                        alt="" class="about-section-4-grid-left-img">
+                            <div class="philoshopy-section-2-card-grid-right">
+                                <div class="philoshopy-section-2-card-grid-right-text">
+                                    <h5>Streamlined Development</h5>
+                                    <p class="philoshopy-section-2-card-grid-right-text-large">
+                                        We condense the time-intensive journey from conception to market-ready design
+                                        into a seamless process. With Indecom, you save 6 to 24 months of development
+                                        time, giving you the competitive advantage of speed.
+                                    </p>
                                 </div>
-                                <div class="about-section-4-grid-right">
-                                    <h3 class="text-colour-dark-green">
-                                        The
-                                        <span class="style-cursive">human touch </span>
-                                        leaves a lasting
-                                        <br>
-                                        impact.
-                                    </h3>
-                                    <div class="about-section-4-grid-right-small">
-                                        <p class="text-indent about-section-4-grid-right-text">Our design philosophy
-                                            stems from the human spirit's drive
-                                            to innovate. Driven
-                                            by new materials, individuality, fashion trends, or pure inspiration, we
-                                            believe in the market's embrace of innovative ideas. We carefully select
-                                            designers and suppliers based on the product and market requirements to
-                                            ensure the best outcome.
+                            </div>
+                        </div>
+                        <div class="philoshopy-section-2-card-grid">
+                            <div class="philoshopy-section-2-card-grid-right philoshopy-section-2-card-aliment-left">
+                                <div class="philoshopy-section-2-card-grid-right-text">
+                                    <h5>Bespoke Design</h5>
+                                    <p class="philoshopy-section-2-card-grid-right-text-large">
+                                        We condense the time-intensive journey from conception to market-ready design
+                                        into a seamless process. With Indecom, you save 6 to 24 months of development
+                                        time, giving you the competitive advantage of speed.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="philoshopy-section-2-card-grid-left">
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e978d34ed61bad3c7ad_What%20set%20Indecom%20apart-2.webp"
+                                    alt="">
+                            </div>
 
-                                            <br>
-                                            <br>
-
-                                            <span class="opcity-0">AAa</span>
-                                            Our designers and suppliers exhibit a tenacity that sets them apart, with a
-                                            strong commitment to bringing their ideas to life. The design process starts
-                                            with inspiration and unfolds organically. Through sketches and
-                                            collaboration,
-                                            ideas are developed, often with numerous iterations.
-                                        </p>
+                        </div>
+                        <div class="philoshopy-section-2-card-grid philoshopy-section-2-border-bottom">
+                            <div class="philoshopy-section-2-card-grid-left">
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e97da90a745c844b1a7_What%20set%20Indecom%20apart-3.webp"
+                                    alt="">
+                            </div>
+                            <div class="philoshopy-section-2-card-grid-right">
+                                <div class="philoshopy-section-2-card-grid-right-text">
+                                    <h5>Tested to Perfection</h5>
+                                    <p class="philoshopy-section-2-card-grid-right-text-large">
+                                        We condense the time-intensive journey from conception to market-ready design
+                                        into a seamless process. With Indecom, you save 6 to 24 months of development
+                                        time, giving you the competitive advantage of speed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-80"></div>
+                        <div class="philoshopy-section-2-bottom">
+                            <div class="philoshopy-section-2-bottom-grid">
+                                <div class="philoshopy-section-2-bottom-card">
+                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e96a87a47d6f5785d84_Exclusive%20License.svg"
+                                        alt="" class="philoshopy-section-2-bottom-card-img">
+                                    <div class="philoshopy-section-2-bottom-card-text">
+                                        <div class="philoshopy-section-2-bottom-card-text-title">Exclusive License</div>
+                                        <p class="philoshopy-section-2-bottom-card-text-large">We offer the exclusivity
+                                            you
+                                            desire. License our designs for one or more countries and introduce your
+                                            customers to fresh, captivating styles under your own brand label.</p>
+                                    </div>
+                                </div>
+                                <div class="philoshopy-section-2-bottom-card">
+                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e960d77ed80d9641c7c_End-to-End%20Support.svg"
+                                        alt="" class="philoshopy-section-2-bottom-card-img">
+                                    <div class="philoshopy-section-2-bottom-card-text">
+                                        <div class="philoshopy-section-2-bottom-card-text-title">End-to-End Support
+                                        </div>
+                                        <p class="philoshopy-section-2-bottom-card-text-large">We offer the exclusivity
+                                            you
+                                            desire. License our designs for one or more countries and introduce your
+                                            customers to fresh, captivating styles under your own brand label.</p>
+                                    </div>
+                                </div>
+                                <div class="philoshopy-section-2-bottom-card">
+                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e986d5df918fdaee50e_Your%20Label%2C%20Our%20Design.svg"
+                                        alt="" class="philoshopy-section-2-bottom-card-img">
+                                    <div class="philoshopy-section-2-bottom-card-text">
+                                        <div class="philoshopy-section-2-bottom-card-text-title">Your Label, Our Design
+                                        </div>
+                                        <p class="philoshopy-section-2-bottom-card-text-large">We offer the exclusivity
+                                            you
+                                            desire. License our designs for one or more countries and introduce your
+                                            customers to fresh, captivating styles under your own brand label.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="space-160"></div>
-                        <div class="about-section-4-grid-2">
-                            <div class="about-section-4-grid-2-left">
-                                <div class="about-section-4-grid-2-left-img">
-                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b5723d50f75d567d70_Process-2-p-800.webp"
-                                        class="about-section-4-grid-2-left-img-1" alt="">
-                                    <div class="about-section-4-grid-2-left-img-content">Photo: Becker Brakel</div>
-                                </div>
-                                <p class="about-section-4-grid-2-left-img-content-2">
-                                    Once the melody aligns, prototypes take shape, and a team is formed to combine the
-                                    designer's creativity with technical expertise. Meticulous drawings pave the way for
-                                    implementation, exploring different product parts and possibilities.
-                                </p>
-                            </div>
-                            <div class="about-section-4-grid-2-left">
-                                <div class="about-section-4-grid-2-left-img">
-                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b511e829328c0086ac_Process-2-1-p-800.webp"
-                                        class="about-section-4-grid-2-left-img-1" alt="">
-                                    <div class="about-section-4-grid-2-left-img-content">Photo: Becker Brakel</div>
-                                </div>
-                                <p class="about-section-4-grid-2-left-img-content-2">
-                                    Our designers work closely together with authorised suppliers in order to
-                                    incorporate the latest techniques and know-how and thus be able to realise cutting
-                                    edge design.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="height-space-160"></div>
+                        <div class="space-100"></div>
                     </div>
-                </div>
-                <!-- about section 4 end   -->
 
-                <!--  about section 5 start-->
-                <div class="section about-section-5">
-                    <div class="container">
-                        <div class="about-section-5-grid">
-                            <div class="about-section-5-grid-left">
-                                <div class="about-section-5-grid-left-top">
-                                    <h4>With a firm commitment to
-                                        <br>
-                                        sustainability at our core, we strive for ongoing refinement of our economic,
-                                        environmental, and social initiatives.
-                                    </h4>
-                                </div>
-                                <div class="about-section-5-grid-left-bottom">
-                                    <div class="about-section-5-grid-left-bottom-flex">
-                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a019bb19ddf795aa05f18d_icon-eco.svg"
-                                            alt="" class="eco-img">
-                                        <p class="text-colour-white">We believe in designing quality products that not
-                                            only offer excellent value,
-                                            but can also be repurposed or refurbished at the end of their lifecycle.</p>
-                                    </div>
-                                    <div class="about-section-5-grid-left-bottom-flex">
-                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a019ba08379c19106a415f_icon-eco2.svg"
-                                            alt="" class="eco-img">
-                                        <p class="text-colour-white">We believe in designing quality products that not
-                                            only offer excellent value,
-                                            but can also be repurposed or refurbished at the end of their lifecycle.</p>
+                </div>
+                <!-- === philoshopy section 2 end === -->
+
+                <!-- === philoshopy section 3 start === -->
+                <div class="philoshopy-section-3">
+                    <div class="space-80"></div>
+                    <div class="philoshopy-section-3-slider-main">
+                        <h4 class="text-colour-white">Our Partners</h4>
+                        <div class="philoshopy-section-3-slider-main-slide swiper philoshopy-partners-swiper">
+                            <div class="philoshopy-section-3-slider-wrapper swiper-wrapper">
+                                <!-- Partner 1: Source International -->
+                                <div class="philoshopy-section-3-slider-wrapper-card swiper-slide">
+                                    <div class="philoshopy-section-3-slider-wrapper-card-main">
+                                        <div class="philoshopy-section-3-slider-wrapper-card-content"
+                                            style="background-color: hsla(0, 0.00%, 100.00%, 1.00);">
+                                            <div class="philoshopy-section-3-card-flex">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a29bd5ad92e5a9aa0ef37e_Source%20International.svg"
+                                                    alt="" class="philoshopy-section-3-card-flex-img">
+                                                <div class="philoshopy-section-3-partner">
+                                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a29dd25b1a7e142c0e49a7_Vector%20(11).svg"
+                                                        alt="">
+                                                    <div class="philoshopy-section-3-partner-text">United States</div>
+                                                </div>
+                                            </div>
+                                            <div class="philoshopy-section-3-card-content-text">
+                                                <p>Source International </p>
+                                                <div class="philoshopy-section-3-card-content-text-full">
+                                                    Established in 1982 Source International specializes in creating
+                                                    contract seating for customers seeking a blend of sophisticated
+                                                    design, environmental responsibility, and realistic pricing.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="about-section-5-grid-right">
-                                <div class="about-section-5-grid-right-center-img">
-                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a01aba46f0d134d282f5da_Recyclable%20material-min.png"
-                                        alt="" class="about-section-5-grid-right-center-img-1">
+                                <!-- Partner 2: GISPEN -->
+                                <div class="philoshopy-section-3-slider-wrapper-card swiper-slide">
+                                    <div class="philoshopy-section-3-slider-wrapper-card-main">
+                                        <div class="philoshopy-section-3-slider-wrapper-card-content"
+                                            style="background-color: hsla(0, 0.00%, 100.00%, 1.00);">
+                                            <div class="philoshopy-section-3-card-flex">
+                                                <img
+                                                    src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a29beddf4cb57114f4ec20_Gispen%20Design.svg">
+                                                <div class="philoshopy-section-3-partner">
+                                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a29dd25b1a7e142c0e49a7_Vector%20(11).svg"
+                                                        alt="">
+                                                    <div class="philoshopy-section-3-partner-text">Netherlands</div>
+                                                </div>
+                                            </div>
+                                            <div class="philoshopy-section-3-card-content-text">
+                                                <p>Gispen</p>
+                                                <div class="philoshopy-section-3-card-content-text-full">
+                                                    Gispen is a Dutch designer, manufacturer and provider of furniture
+                                                    solutions. Since 1916, Gispen has been focusing on design and
+                                                    innovation.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Partner 3: Arcadia -->
+                                <div class="philoshopy-section-3-slider-wrapper-card swiper-slide">
+                                    <div class="philoshopy-section-3-slider-wrapper-card-main">
+                                        <div class="philoshopy-section-3-slider-wrapper-card-content"
+                                            style="background-color: hsla(0, 0.00%, 100.00%, 1.00);">
+                                            <div class="philoshopy-section-3-card-flex">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a29c02e7f60775e394cac7_Arcadia.svg"
+                                                    alt="" class="philoshopy-section-3-card-flex-img">
+                                                <div class="philoshopy-section-3-partner">
+                                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a29dd25b1a7e142c0e49a7_Vector%20(11).svg"
+                                                        alt="">
+                                                    <div class="philoshopy-section-3-partner-text">United States</div>
+                                                </div>
+                                            </div>
+                                            <div class="philoshopy-section-3-card-content-text">
+                                                <p>Arcadia</p>
+                                                <div class="philoshopy-section-3-card-content-text-full">
+                                                    Arcadia has been a leader in the design and manufacture of seating
+                                                    and table solutions for contract markets since 1979.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Partner 4: Bert Plantagie -->
+                                <div class="philoshopy-section-3-slider-wrapper-card swiper-slide">
+                                    <div class="philoshopy-section-3-slider-wrapper-card-main">
+                                        <div class="philoshopy-section-3-slider-wrapper-card-content"
+                                            style="background-color: hsla(0, 0.00%, 100.00%, 1.00);">
+                                            <div class="philoshopy-section-3-card-flex">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a29c1e9a8c9385e915333c_RodlinDesign%201.svg"
+                                                    alt="" class="philoshopy-section-3-card-flex-img">
+                                                <div class="philoshopy-section-3-partner">
+                                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a29dd25b1a7e142c0e49a7_Vector%20(11).svg"
+                                                        alt="">
+                                                    <div class="philoshopy-section-3-partner-text">Netherlands</div>
+                                                </div>
+                                            </div>
+                                            <div class="philoshopy-section-3-card-content-text">
+                                                <p>Bert Plantagie</p>
+                                                <div class="philoshopy-section-3-card-content-text-full">
+                                                    Bert Plantagie is an established Dutch design brand with a long
+                                                    tradition in high-quality furniture for both residential and
+                                                    commercial use.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="philoshopy-section-3-slider-wrapper-card swiper-slide">
+                                    <div class="philoshopy-section-3-slider-wrapper-card-main">
+                                        <div class="philoshopy-section-3-slider-wrapper-card-content"
+                                            style="background-color: hsla(0, 0.00%, 100.00%, 1.00);">
+                                            <div class="philoshopy-section-3-card-flex">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a29c32bef504e2ba7ca649_Bert%20Plantagie.svg"
+                                                    alt="" class="philoshopy-section-3-card-flex-img">
+                                                <div class="philoshopy-section-3-partner">
+                                                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a29dd25b1a7e142c0e49a7_Vector%20(11).svg"
+                                                        alt="">
+                                                    <div class="philoshopy-section-3-partner-text">Netherlands</div>
+                                                </div>
+                                            </div>
+                                            <div class="philoshopy-section-3-card-content-text">
+                                                <p>Bert Plantagie</p>
+                                                <div class="philoshopy-section-3-card-content-text-full">
+                                                    Bert Plantagie is an established Dutch design brand with a long
+                                                    tradition in high-quality furniture for both residential and
+                                                    commercial use.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="space-80"></div>
                 </div>
-                <!--  about section 5 end-->
+                <!-- === philoshopy section 3 end === -->
 
+                <!-- === philoshopy section 4 start === -->
 
-
-
+                <!-- === philoshopy section 4 end === -->
 
                 <!-- footer section start -->
                 <div class="section product-range">
@@ -428,9 +485,9 @@
                                 </h2>
                             </div>
                             <div class="product-range-horizontal-right">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b47f61c6fc9166d0bf_Footer-B2.webp"
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e975f67dfb853907281_Footer-C2.webp"
                                     class="product-range-before-img" alt="">
-                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b4e7e4dcda62dcc19e_Footer-B1-p-500.webp"
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e970d77ed80d9641d1a_Footer-C1-p-500.webp"
                                     class="product-range-after-img" alt="">
                             </div>
                         </div>

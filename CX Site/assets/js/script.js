@@ -304,7 +304,7 @@ if (aboutHeroSection) {
 // < === === about page transparent navbar animation end === ===>
 
 // < === === slider swiper initialization start === ===>
-const swiper = new Swiper(".slider-centetr-main.swiper", {
+const swiperMain = new Swiper(".slider-centetr-main.swiper", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 40,
@@ -349,9 +349,13 @@ if (sliderSection && cursor && cursorDot) {
     };
 
     // Link with Swiper events for perfect swipe animation
-    if (swiper) {
-        swiper.on('touchStart', onPress);
-        swiper.on('touchEnd', onRelease);
+    if (swiperMain) {
+        swiperMain.on('touchStart', onPress);
+        swiperMain.on('touchEnd', onRelease);
+    }
+    if (swiperPartners) {
+        swiperPartners.on('touchStart', onPress);
+        swiperPartners.on('touchEnd', onRelease);
     }
 
     // Standard mouse fallback for non-swipe areas
@@ -397,5 +401,62 @@ if (modelsToggle && modelsSubmenu) {
 }
 // < === === mobile menu submenu toggle end === ===>
 
+
+// < === === philoshopy section 1 animation start === ===>
+const parallaxSection1 = document.querySelector('.philoshopy-section-1');
+const parallaxImages1 = document.querySelectorAll('.parallax-img');
+
+if (parallaxSection1 && parallaxImages1.length > 0) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+        targetX = e.clientX - window.innerWidth / 2;
+        targetY = e.clientY - window.innerHeight / 2;
+    });
+
+    const renderParallax = () => {
+        mouseX += (targetX - mouseX) * 0.1;
+        mouseY += (targetY - mouseY) * 0.1;
+
+        parallaxImages1.forEach(img => {
+            const speed = parseFloat(img.getAttribute('data-mouse-speed')) || 1;
+            const x = -(mouseX * speed) / 100;
+            const y = -(mouseY * speed) / 100;
+            img.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+        requestAnimationFrame(renderParallax);
+    };
+
+    renderParallax();
+}
+// < === === philoshopy section 1 animation end === ===>
+
+// < === === philoshopy section 3 start === ===>
+const swiperPartners = new Swiper(".philoshopy-partners-swiper", {
+    direction: "horizontal",
+    loop: false,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    speed: 800,
+    breakpoints: {
+        767: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 2,
+        },
+        1440: {
+            slidesPerView: 3.2,
+        }
+    }
+});
+// < === === philoshopy section 3 end === ===>
 
 

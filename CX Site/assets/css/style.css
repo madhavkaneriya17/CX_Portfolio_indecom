@@ -1577,6 +1577,10 @@ html.w-mod-touch * {
     font-size: 1.125em;
 }
 
+.space-160 {
+    height: 5rem;
+}
+
 /* === about section 4 end === */
 
 
@@ -1775,3 +1779,482 @@ html.w-mod-touch * {
 .mobile-menu-item {
     cursor: pointer;
 }
+
+
+
+
+/*  <!-- === contact section 1 start === --> */
+
+.contact-form-horizontal {
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact-form-left {
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    flex-direction: column;
+    width: 100%;
+    max-width: 42.75em;
+    display: flex;
+}
+
+.contact-form-heading {
+    color: #3b3b3b;
+    letter-spacing: -.05em;
+    font-family: Helveticaneue Light, sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.contact-form-img {
+    position: relative;
+}
+
+.contact-form-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.contact-form-right {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 35.375em;
+    display: flex;
+}
+
+
+.contact-form-mb {
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+.form-flex {
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.text-fild {
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+
+.form-fild-lable {
+    color: #192120;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.input-fild {
+    color: #192120;
+    background-color: #fff0;
+    border: 1px solid #dde3e2;
+    height: 2.9375em;
+    margin-bottom: 0;
+    padding: .5em 1em;
+    font-size: 1em;
+}
+
+select:not(:-internal-list-box):not([multiple]) option {
+    padding-block-end: -internal-auto-base(1px, 0);
+    display: -internal-auto-base(block, flex);
+    padding-inline: -internal-auto-base(2px, 0.5em);
+}
+
+.select-drop-space {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.textarea-fild {
+    height: 7.25em;
+}
+
+/*  <!-- === contact section 1 end === --> */
+
+/*  <!-- === contact section 2 start === --> */
+
+.contact-section-2 {
+    background-color: #796c5c;
+}
+
+.contact-section-2-grid {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.contact-section-2-grid-left {
+    grid-column-gap: 3.5em;
+    grid-row-gap: 3.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 5em;
+    padding-left: 1.25em;
+    display: flex;
+}
+
+
+.contact-section-2-text-holder {
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+.contact-section-2-text-holder-top {
+    color: #ffffff80;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue";
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.content-holder-space {
+    line-height: 1.2;
+    font-size: 1.75em;
+}
+
+.content-holder-space a {
+    text-decoration: none;
+}
+
+.contact-section-2-grid-right {
+    position: relative;
+}
+
+.contact-section-2-img {
+    object-fit: cover;
+    width: 100%;
+    height: 50em;
+    display: block;
+}
+
+/*  <!-- === contact section 2 end === --> */
+
+
+/*  <!-- === philoshopy section 1 start === --> */
+
+.philoshopy-section-1 {
+    width: 100%;
+    height: 62.1875em;
+    margin-top: 5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.philoshopy-section-1-text {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 0;
+    display: flex;
+}
+
+.philoshopy-section-1-text-block {
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    width: 100%;
+    max-width: 47em;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.philoshopy-section-1-text-block-small {
+    margin-bottom: 0;
+    font-size: 1.375em;
+    font-weight: 400;
+    color: #3b3b3b;
+    margin: 0;
+}
+
+.philoshopy-section-1-img-1 {
+    width: 100%;
+    max-width: 23.4263em;
+    inset: auto auto 3.1875em -8.6875em;
+    position: absolute;
+}
+
+.philoshopy-section-1-img-2 {
+    width: 100%;
+    max-width: 14.75em;
+    inset: auto 1.5em 0% auto;
+    position: absolute;
+}
+
+.philoshopy-section-1-img-3 {
+    object-fit: cover;
+    width: 100%;
+    max-width: 19.5831em;
+    top: 25.25em;
+    right: -4.8125em;
+    position: absolute;
+}
+
+.philoshopy-section-1-img-4 {
+    object-fit: cover;
+    width: 100%;
+    max-width: 26.5em;
+    inset: 6.8125em auto auto -4.375em;
+    position: absolute;
+}
+
+.philoshopy-section-1-img-5 {
+    object-fit: cover;
+    width: 100%;
+    max-width: 25.0894em;
+    inset: 2.5em 4.125em auto auto;
+    position: absolute;
+}
+
+/*  <!-- === philoshopy section 1 end === --> */
+
+
+/*  <!-- === philoshopy section 2 start === --> */
+
+.philoshopy-section-2-card-grid {
+    border-bottom: 1px solid #dde3e2;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 1.5vw;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.philoshopy-section-2-card-grid-left {
+    position: relative;
+}
+
+.philoshopy-section-2-card-grid-left img {
+    object-fit: cover;
+    width: 100%;
+    height: 28.4375em;
+}
+
+.philoshopy-section-2-card-grid-right {
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    flex-direction: column;
+    display: flex;
+}
+
+.philoshopy-section-2-card-grid-right-text {
+    grid-column-gap: 2.5em;
+    grid-row-gap: 2.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 32.5em;
+    display: flex;
+}
+
+.philoshopy-section-2-card-grid-right-text-large {
+    font-size: 1.125em;
+}
+
+.philoshopy-section-2-card-aliment-left {
+    align-items: unset;
+}
+
+.philoshopy-section-2-bottom-grid {
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 1.5vw;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+
+.philoshopy-section-2-bottom-card {
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    border-top: 1px solid #dde3e2;
+    flex-direction: column;
+    padding-top: 1.5em;
+    padding-right: 2.25em;
+    display: flex;
+}
+
+.philoshopy-section-2-bottom-card-img {
+    width: 3em;
+    height: 3em;
+}
+
+.philoshopy-section-2-bottom-card-text {
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.philoshopy-section-2-bottom-card-text-title {
+    margin-bottom: 0;
+    font-size: 1.375em;
+    font-weight: 400;
+}
+
+.philoshopy-section-2-bottom-card-text-large {
+    font-size: 1.125em;
+}
+
+.philoshopy-section-2-border-bottom {
+    border-bottom: none;
+}
+
+/*  <!-- === philoshopy section 2 end === --> */
+
+/*  <!-- === philoshopy section 3 start === --> */
+.philoshopy-section-3 {
+    background-image: url(https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f20bb5522b0e5c3b4e902_AS_Becker-min.webp);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.philoshopy-section-3-slider-main {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    position: relative;
+}
+
+.philoshopy-section-3-slider-main-slide {
+    cursor: grab;
+    margin-top: 5em;
+    position: relative;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    list-style: none;
+}
+
+.philoshopy-section-3-slider-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition-property: transform;
+    box-sizing: content-box;
+    list-style: none;
+}
+
+.philoshopy-section-3-slider-wrapper-card {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    flex-shrink: 0;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: grab;
+    list-style: none;
+}
+
+.philoshopy-section-3-slider-wrapper-card:hover {
+    transform: scale(1.02);
+}
+
+.philoshopy-section-3-slider-wrapper-card:active {
+    cursor: grabbing;
+}
+
+.philoshopy-section-3-slider-wrapper-card-main {
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.philoshopy-section-3-slider-wrapper-card-content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 20em;
+    padding: 2em;
+    display: flex;
+    cursor: grab;
+}
+
+.philoshopy-section-3-card-flex {
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.philoshopy-section-3-card-flex-img {
+    max-width: 7.5em;
+}
+
+.philoshopy-section-3-partner {
+    grid-column-gap: .375em;
+    grid-row-gap: .375em;
+    border: 1px solid #796c5c;
+    border-radius: 50em;
+    flex: 0 auto;
+    justify-content: center;
+    margin-left: auto;
+    padding: .53125em .625em;
+    display: flex;
+}
+
+.philoshopy-section-3-partner img {
+    max-width: .75em;
+}
+
+.philoshopy-section-3-partner-text {
+    color: #796c5c;
+    white-space: pre;
+    font-size: 1em;
+}
+
+.philoshopy-section-3-card-content-text p {
+    font-family: "Helvetica Neue";
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.philoshopy-section-3-card-content-text-full {
+    margin-top: 1em;
+}
+
+/*  <!-- === philoshopy section 3 end === --> */
