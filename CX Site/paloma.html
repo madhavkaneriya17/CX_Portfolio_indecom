@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Link Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+
+    <div class="main-site-master">
+        <div class="cursor no-click">
+            <div class="cursor-move">
+                <div class="cursor-dot">
+                    <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a2d4ace99be54e912fc988_cursor.png"
+                        loading="lazy" alt="" />
+                </div>
+            </div>
+        </div>
+        <header class="header-main">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <svg width="131" height="28" viewBox="0 0 131 28" fill="currentcolor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.1005 23.8995C6.72601 26.525 10.287 28 14 28L14 0C10.287 0 6.72601 1.475 4.1005 4.1005C1.475 6.72601 0 10.287 0 14C0 17.713 1.475 21.274 4.1005 23.8995Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M23.6137 20.5336C21.8808 22.2664 19.5306 23.2399 17.08 23.2399V4.75995C19.5306 4.75995 21.8808 5.73345 23.6137 7.46628C25.3465 9.19912 26.32 11.5493 26.32 13.9999C26.32 16.4505 25.3465 18.8008 23.6137 20.5336Z"
+                            fill="currentcolor"></path>
+                        <path d="M35.9971 4.60752H39.2871V23.4H35.9971V4.60752Z" fill="currentcolor"></path>
+                        <path
+                            d="M41.5854 9.79256H44.4279V11.7929L44.4806 11.8455C44.9368 11.091 45.5334 10.5032 46.2703 10.0821C47.0073 9.64341 47.8232 9.42408 48.7181 9.42408C50.2096 9.42408 51.3852 9.81011 52.245 10.5822C53.1048 11.3542 53.5347 12.5123 53.5347 14.0564V23.4H50.5342V14.846C50.4991 13.7757 50.271 13.0036 49.8499 12.5298C49.4287 12.0385 48.7707 11.7929 47.8759 11.7929C47.367 11.7929 46.9108 11.8894 46.5072 12.0824C46.1036 12.2579 45.7615 12.5123 45.4807 12.8457C45.2 13.1615 44.9807 13.5388 44.8227 13.9774C44.6648 14.4161 44.5859 14.8811 44.5859 15.3724V23.4H41.5854V9.79256Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M68.2007 23.4H65.3581V21.5576H65.3055C64.9019 22.3472 64.3141 22.9175 63.542 23.2684C62.77 23.6018 61.954 23.7685 61.0942 23.7685C60.0239 23.7685 59.0852 23.5842 58.278 23.2158C57.4884 22.8297 56.8304 22.3121 56.304 21.6629C55.7776 21.0137 55.3828 20.2504 55.1196 19.373C54.8564 18.4782 54.7248 17.5219 54.7248 16.5042C54.7248 15.2759 54.8915 14.2143 55.2249 13.3194C55.5583 12.4246 55.9969 11.6876 56.5409 11.1086C57.1024 10.5295 57.7341 10.1084 58.4359 9.8452C59.1553 9.56445 59.8835 9.42408 60.6205 9.42408C61.0416 9.42408 61.4715 9.46795 61.9102 9.55568C62.3488 9.62587 62.77 9.74869 63.1735 9.92416C63.5771 10.0996 63.9456 10.3277 64.279 10.6085C64.6299 10.8717 64.9194 11.1875 65.1475 11.556H65.2002V4.60752H68.2007V23.4ZM57.7253 16.741C57.7253 17.3201 57.7955 17.8903 57.9359 18.4518C58.0938 19.0133 58.3219 19.5134 58.6202 19.9521C58.936 20.3907 59.3308 20.7417 59.8046 21.0049C60.2783 21.2681 60.8398 21.3997 61.4891 21.3997C62.1558 21.3997 62.7261 21.2593 63.1999 20.9786C63.6912 20.6978 64.086 20.3293 64.3842 19.8731C64.7001 19.4169 64.9282 18.9081 65.0686 18.3466C65.2265 17.7675 65.3055 17.1797 65.3055 16.5831C65.3055 15.0741 64.9633 13.8985 64.279 13.0562C63.6122 12.214 62.6998 11.7929 61.5417 11.7929C60.8398 11.7929 60.2432 11.942 59.7519 12.2403C59.2782 12.5211 58.8834 12.8983 58.5675 13.3721C58.2692 13.8283 58.0499 14.3547 57.9095 14.9513C57.7867 15.5303 57.7253 16.1269 57.7253 16.741Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M79.5006 15.3987C79.4655 14.9 79.3602 14.4687 79.1847 14.0301C79.0268 13.5914 78.7987 13.2142 78.5004 12.8983C78.2197 12.5649 77.8687 12.3017 77.4476 12.1087C77.044 11.8982 76.5878 11.7929 76.079 11.7929C75.5526 11.7929 75.07 11.8894 74.6314 12.0824C74.2102 12.2579 73.8418 12.5123 73.5259 12.8457C73.2276 13.1615 72.982 13.5388 72.789 13.9774C72.6135 14.4161 72.517 14.8899 72.4994 15.3987H79.5006ZM72.4994 17.3727C72.4994 17.8991 72.5696 18.408 72.71 18.8993C72.8679 19.3906 73.096 19.8205 73.3943 20.189C73.6926 20.5574 74.0699 20.8557 74.5261 21.0838C74.9823 21.2944 75.5262 21.3997 76.1579 21.3997C77.0353 21.3997 77.7371 21.2154 78.2635 20.847C78.8075 20.4609 79.211 19.8907 79.4742 19.1362H82.3168C82.1589 19.8731 81.8869 20.5311 81.5009 21.1102C81.1149 21.6892 80.6499 22.1805 80.1059 22.5841C79.562 22.9701 78.9478 23.2596 78.2635 23.4526C77.5967 23.6632 76.8949 23.7685 76.1579 23.7685C75.0876 23.7685 74.1401 23.593 73.3154 23.2421C72.4907 22.8911 71.7888 22.3998 71.2098 21.7682C70.6483 21.1365 70.2184 20.382 69.9201 19.5046C69.6393 18.6273 69.499 17.6622 69.499 16.6094C69.499 15.6444 69.6481 14.7319 69.9464 13.8722C70.2622 12.9948 70.7009 12.2315 71.2624 11.5823C71.8414 10.9155 72.5345 10.3891 73.3417 10.0031C74.1488 9.61709 75.0613 9.42408 76.079 9.42408C77.1493 9.42408 78.1056 9.65219 78.9478 10.1084C79.8076 10.5471 80.5183 11.1349 81.0798 11.8718C81.6413 12.6088 82.0448 13.4598 82.2905 14.4249C82.5537 15.3724 82.6239 16.355 82.501 17.3727H72.4994Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M92.6517 14.3459C92.5289 13.5037 92.1867 12.872 91.6252 12.4509C91.0813 12.0122 90.3882 11.7929 89.546 11.7929C89.1599 11.7929 88.7476 11.8631 88.3089 12.0034C87.8703 12.1263 87.4667 12.3719 87.0982 12.7404C86.7297 13.0913 86.4227 13.5914 86.177 14.2406C85.9314 14.8723 85.8085 15.7058 85.8085 16.741C85.8085 17.3025 85.8699 17.864 85.9928 18.4255C86.1331 18.987 86.3437 19.4871 86.6244 19.9258C86.9227 20.3644 87.3 20.7241 87.7562 21.0049C88.2124 21.2681 88.7651 21.3997 89.4144 21.3997C90.2917 21.3997 91.0111 21.1277 91.5726 20.5838C92.1516 20.0398 92.5113 19.2765 92.6517 18.2939H95.6522C95.3715 20.0661 94.6959 21.426 93.6256 22.3735C92.5728 23.3035 91.169 23.7685 89.4144 23.7685C88.344 23.7685 87.3965 23.593 86.5718 23.2421C85.7647 22.8736 85.0803 22.3823 84.5188 21.7682C83.9574 21.1365 83.5275 20.3907 83.2292 19.531C82.9484 18.6712 82.808 17.7412 82.808 16.741C82.808 15.7233 82.9484 14.767 83.2292 13.8722C83.5099 12.9773 83.931 12.2052 84.4925 11.556C85.054 10.8892 85.7471 10.3716 86.5718 10.0031C87.414 9.61709 88.3967 9.42408 89.5196 9.42408C90.3092 9.42408 91.055 9.52936 91.7568 9.73992C92.4763 9.93293 93.1079 10.2312 93.6519 10.6348C94.2134 11.0384 94.6696 11.5472 95.0205 12.1614C95.3715 12.7755 95.582 13.5037 95.6522 14.3459H92.6517Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M103.013 23.7685C101.925 23.7685 100.951 23.593 100.091 23.2421C99.2492 22.8736 98.5298 22.3735 97.9332 21.7418C97.3542 21.1102 96.9067 20.3557 96.5909 19.4783C96.2926 18.601 96.1434 17.6359 96.1434 16.5831C96.1434 15.5479 96.2926 14.5916 96.5909 13.7142C96.9067 12.8369 97.3542 12.0824 97.9332 11.4507C98.5298 10.819 99.2492 10.3277 100.091 9.9768C100.951 9.60832 101.925 9.42408 103.013 9.42408C104.101 9.42408 105.066 9.60832 105.908 9.9768C106.768 10.3277 107.487 10.819 108.066 11.4507C108.663 12.0824 109.11 12.8369 109.409 13.7142C109.725 14.5916 109.882 15.5479 109.882 16.5831C109.882 17.6359 109.725 18.601 109.409 19.4783C109.11 20.3557 108.663 21.1102 108.066 21.7418C107.487 22.3735 106.768 22.8736 105.908 23.2421C105.066 23.593 104.101 23.7685 103.013 23.7685ZM103.013 21.3997C103.68 21.3997 104.259 21.2593 104.75 20.9786C105.241 20.6978 105.645 20.3293 105.961 19.8731C106.277 19.4169 106.505 18.9081 106.645 18.3466C106.803 17.7675 106.882 17.1797 106.882 16.5831C106.882 16.0041 106.803 15.425 106.645 14.846C106.505 14.267 106.277 13.7581 105.961 13.3194C105.645 12.8632 105.241 12.4947 104.75 12.214C104.259 11.9333 103.68 11.7929 103.013 11.7929C102.346 11.7929 101.767 11.9333 101.276 12.214C100.785 12.4947 100.381 12.8632 100.065 13.3194C99.7493 13.7581 99.5124 14.267 99.3545 14.846C99.2141 15.425 99.1439 16.0041 99.1439 16.5831C99.1439 17.1797 99.2141 17.7675 99.3545 18.3466C99.5124 18.9081 99.7493 19.4169 100.065 19.8731C100.381 20.3293 100.785 20.6978 101.276 20.9786C101.767 21.2593 102.346 21.3997 103.013 21.3997Z"
+                            fill="currentcolor"></path>
+                        <path
+                            d="M111.061 9.79256H113.903V11.6876H113.982C114.211 11.3542 114.456 11.0471 114.719 10.7664C114.983 10.4857 115.272 10.2488 115.588 10.0558C115.921 9.86275 116.299 9.7136 116.72 9.60832C117.141 9.48549 117.623 9.42408 118.167 9.42408C118.992 9.42408 119.755 9.60832 120.457 9.9768C121.177 10.3453 121.685 10.9155 121.984 11.6876C122.493 10.9857 123.08 10.433 123.747 10.0294C124.414 9.62587 125.247 9.42408 126.248 9.42408C127.686 9.42408 128.801 9.77501 129.59 10.4769C130.397 11.1787 130.801 12.3544 130.801 14.0038V23.4H127.8V15.4514C127.8 14.9074 127.783 14.4161 127.748 13.9774C127.713 13.5212 127.607 13.1352 127.432 12.8194C127.274 12.486 127.028 12.2315 126.695 12.0561C126.362 11.8806 125.905 11.7929 125.326 11.7929C124.309 11.7929 123.572 12.1087 123.115 12.7404C122.659 13.3721 122.431 14.267 122.431 15.425V23.4H119.431V14.6618C119.431 13.7142 119.255 13.0036 118.904 12.5298C118.571 12.0385 117.948 11.7929 117.036 11.7929C116.65 11.7929 116.272 11.8718 115.904 12.0298C115.553 12.1877 115.237 12.4158 114.956 12.7141C114.693 13.0124 114.474 13.3809 114.298 13.8195C114.14 14.2582 114.061 14.7583 114.061 15.3198V23.4H111.061V9.79256Z"
+                            fill="currentcolor"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="#" class="header-nav-link">models</a>
+                    <a href="about.html" class="header-nav-link">about</a>
+                    <a href="philoshopy.html" class="header-nav-link">philosophy</a>
+                    <a href="contact.html" class="header-nav-link">contact</a>
+                    <a href="#" class="header-nav-button" style="opacity: 1;">
+                        <div class="nav-btn-text">
+                            work with indicom
+                        </div>
+                        <div class="nav-btn-arrow">
+                            <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649ea5aad510e5cbb18b7339_Arrow.svg"
+                                loading="lazy" data-w-id="b73bbdb6-94fe-2242-6b98-7036205750fa" alt=""
+                                class="arrow-icon"
+                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        </div>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="header-right-mobile">
+
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu-btn">
+                    <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 11L32 11V12L16 12V11ZM16 16L32 16V17H16V16Z" fill="currentcolor"></path>
+                        <rect x="0.5" y="0.5" width="47" height="27" rx="13.5" stroke="currentcolor"></rect>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu-overlay" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-item-wrapper">
+                        <div class="mobile-menu-item" id="mobileModelsToggle">
+                            <span>Models</span>
+                            <span class="plus-icon"><img
+                                    src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a40fce725716ff8d6b3873_Plus.svg"
+                                    alt=""></span>
+                        </div>
+                        <div class="mobile-submenu" id="mobileModelsSubmenu">
+                            <a href="#" class="mobile-submenu-item">All models</a>
+                            <a href="#" class="mobile-submenu-item">Nomi</a>
+                            <a href="#" class="mobile-submenu-item">Axis</a>
+                            <a href="#" class="mobile-submenu-item">Rho</a>
+                            <a href="#" class="mobile-submenu-item">TG-2</a>
+                            <a href="#" class="mobile-submenu-item">Paloma</a>
+                            <a href="#" class="mobile-submenu-item">Ethy</a>
+                            <a href="#" class="mobile-submenu-item">Omega</a>
+                            <a href="#" class="mobile-submenu-item">Kion</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="mobile-menu-item">About</a>
+                    <a href="#" class="mobile-menu-item">Philosophy</a>
+                    <a href="#" class="mobile-menu-item">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- === models dropdown start === -->
+        <div class="models-dropdown" id="modelsDropdown">
+            <div class="models-one">
+                <div class="uppercase-text">models</div>
+                <div class="mt-1">
+                    <div class="empty-div">
+                        <a href="ethy.html" class="model-link-inner">
+                            <h5>Ethy</h5>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="nomi.html" class="model-link-inner">
+                            <h5>Nomi</h5>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="axis.html" class="model-link-inner">
+                            <h5>Axis</h5>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="rho.html" class="model-link-inner">
+                            <h5>Rho</h5>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="tg-2.html" class="model-link-inner">
+                            <h5>TG-2</h5>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="" class="model-link-inner">
+                            <h5>Paloma</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="models-two">
+                <div class="uppercase-text">Legacy models</div>
+                <div class="mt-1">
+                    <div class="empty-div">
+                        <a href="" class="model-link-inner">
+                            <h6>Myto</h6>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="" class="model-link-inner">
+                            <h6>Kion</h6>
+                        </a>
+                    </div>
+                    <div class="empty-div">
+                        <a href="" class="model-link-inner">
+                            <h6>Omega</h6>
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="mt-5 text-decoration">
+                    <h5>All models</h5>
+                </a>
+            </div>
+            <div class="model-three">
+                <div class="model-threen-img-1">
+                    <a href="">
+                        <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a31caaf3df758c8b439981_Menu-Nomi.avif"
+                            alt="">
+                    </a>
+                    <div class="model-caption">NOMI: DIVERSE, SUSTAINABLE AND COMFORTABLE.</div>
+                </div>
+                <div class="model-threen-img-1">
+                    <a href="">
+                        <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a31cb7fdb7f470f1296270_Menu-Axis-p-500.avif"
+                            alt="">
+                    </a>
+                    <div class="model-caption">AXIS: CLASSIC WOOD SHELL WITH EXCEPTIONAL ERGONOMICS.</div>
+                </div>
+            </div>
+        </div>
+        <!-- === models dropdown end === -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+
+
+
+
+                <!-- ethy section 1 start -->
+                <div class="section ethy-section-1 nomi-hero-section">
+                    <div class="ethy-section-1-top">
+                        <div class="ethy-section-1-top-grid">
+                            <div class="ethy-section-1-top-grid-left">
+                                <div class="ethy-section-1-top-grid-left-head">
+                                    <div class="ethy-section-1-top-grid-left-head-content">
+                                        <h2 class="text-inline">Paloma</h2>
+                                        <h2 class="ethy-section-1-top-space text-inline">:</h2>
+                                        <h2 class="text-inline">Clean, height-adjustable and contemporary.
+                                        </h2>
+                                    </div>
+                                    <a href="#" class="common-btn btn-main line-block">
+                                        <div>inquire about this model</div>
+                                        <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649ea5aad510e5cbb18b7339_Arrow.svg"
+                                            alt=""
+                                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                            class="arrow-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ethy-section-1-top-grid-right">
+                                <div class="ethy-section-1-top-grid-right-img">
+                                    <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64b142a4eecb5e93f7d5d1ce_paloma.avif"
+                                        alt="" class="ethy-section-1-top-grid-right-img-inner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="height-space-160"></div>
+                        <div class="ethy-section-1-bottom">
+                            <h3 class="ethy-section-1-bottom-head">The Paloma table & desk program is suitable for home
+                                or office use. As of 2023, a height-adjustable desk version is available, perfect for
+                                remote work, especially when paired with a height-adjustable swivel chair for optimal
+                                ergonomics. A simpler, non-height-adjustable version, and a dining/meetings version will
+                                also be released later. The program offers different table top sizes, materials, and
+                                colors to choose from.
+                            </h3>
+                        </div>
+                        <div class="height-space-160"></div>
+                    </div>
+                </div>
+                <!-- ethy section 1 end -->
+
+                <!-- nomi section 2 start -->
+                <div class="section nomi-section-2">
+                    <div class="container">
+                        <div class="nomi-section-2-grid">
+                            <div class="nomi-section-2-animated-img">
+                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2cba5e19d57819a82ddd5_Gallery-Pythagoras-1.avif"
+                                    alt="">
+                            </div>
+                            <div class="nomi-section-2-animated-img nomi-section-2-grid-image">
+                                <div class="nomi-section-2-animated-img">
+                                    <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2cba62f087872c86f941a_Gallery-Pythagoras-3.avif"
+                                        alt="">
+                                </div>
+                                <div class="nomi-section-2-animated-img">
+                                    <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2cba743df3f8284e95986_Gallery-Pythagoras-2.avif"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- nomi section 2 end -->
+
+                <!-- nomi section 3 start -->
+                <div class="container">
+                    <div class="section nomi-section-3 nomi-section-2-grid-image">
+                        <div class="nomi-section-2-animated-img">
+                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2cba792e236b2ed0639ed_Gallery-Pythagoras-4.avif"
+                                alt="">
+                        </div>
+                        <div class="nomi-section-2-animated-img">
+                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2cba9575efcffe61fd801_Gallery-Pythagoras-5.avif"
+                                alt="">
+                        </div>
+                        <div class="height-space-160"></div>
+                    </div>
+                </div>
+
+                <!-- nomi section 3 end -->
+
+
+                <!-- nomi section 4 start -->
+                <div class="ethy-section-2 section">
+                    <div class="height-space-160"></div>
+                    <div class="container">
+                        <div class="ethy-section-2-flex">
+                            <div class="ethy-section-2-flex-left">
+                                <div class="ethy-section-2-flex-left-point">
+                                    <p>Paloma</p>
+                                    <p>Characteristics</p>
+                                </div>
+                                <div class="ethy-section-2-flex-left-point-main">
+                                    <h5>Stand alone workstation</h5>
+                                </div>
+                                <div class="ethy-section-2-flex-left-point-main">
+                                    <h5>Available as "height adjustable"</h5>
+                                </div>
+                                <div class="ethy-section-2-flex-left-point-main">
+                                    <h5>Various table top sizes and materials</h5>
+                                </div>
+                                <div class="ethy-section-2-flex-left-point-main">
+                                    <h5>Program can be extended with (side) tables</h5>
+                                </div>
+                            </div>
+                            <div class="ethy-section-2-flex-right nomi-section-2-flex-right ">
+                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a2c64fcd074ceda265b203_Pythagoras-Characteristics.avif"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ethy-section-3 section">
+                    <div class="space-100"></div>
+                    <div class="container">
+                        <div class="ethy-section-3-wrapper">
+                            <div class="ethy-section-3-wrapper-inner">
+                                <div class="ethy-section-3-wrapper-inner-heading">Information</div>
+                                <div class="ethy-section-3-wrapper-inner-conten">Designed by Just Meyer</div>
+                            </div>
+                            <div class="ethy-section-3-wrapper-inner">
+                                <div class="ethy-section-3-wrapper-inner-heading">compliance &amp; sustainability</div>
+                                <div class="ethy-section-3-wrapper-inner-heading-text">
+                                    <p>Paloma has been tested according to Dutch requirements for home office use.</p>
+                                </div>
+                            </div>
+                            <div class="ethy-section-3-wrapper-inner">
+                                <div class="ethy-section-3-wrapper-inner-heading">Applications</div>
+                                <div class="ethy-section-3-wrapper-inner-heading-text">                                    
+                                    <p>A stand alone workstation aimed primarily at residential use (work at home) and at small to medium sized businesses.</p>
+                                    <div class="button-extra">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="height-space-160 border-bottom"></div>
+                </div>
+                <!-- nomi section 4 end -->
+
+
+
+
+                <!-- nomi section 6 start -->
+                <div class="ethy-section-4 section">
+                    <div class="container">
+                        <div class="ethy-section-4-title">
+                            <h4 class="text-colour-dark-green">Related Models</h4>
+                        </div>
+                        <div class="space-80"></div>
+                        <div class="chair-lounge-main">
+                            <div class="chair-lounge-main-inner">
+                                <a href="" class="chair-image-link">
+                                    <div class="chair-image-grid">
+                                        <div class="chair-image-grid-inner-top">
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a031f983b90392da43b1a0_Models-Nomi-cover.avif"
+                                                alt="" class="chair-img-default">
+
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a033b661f8ca9a1e7546c0_Models-Nomi-atmosphere-p-800.avif"
+                                                alt="" class="chair-img-hover">
+                                        </div>
+                                        <div class="chair-image-grid-inner-bottom">TG-2</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="chair-lounge-main-inner">
+                                <a href="" class="chair-image-link">
+                                    <div class="chair-image-grid">
+                                        <div class="chair-image-grid-inner-top">
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64b142d7d48480204ce98b48_tg-2.avif"
+                                                alt="" class="chair-img-default">
+
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a0340126067bbd58b33002_Models-TG-2-atmosphere.avif"
+                                                alt="" class="chair-img-hover">
+                                        </div>
+                                        <div class="chair-image-grid-inner-bottom">Nomi</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="chair-lounge-main-inner">
+                                <a href="" class="chair-image-link">
+                                    <div class="chair-image-grid">
+                                        <div class="chair-image-grid-inner-top">
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a03220103790cbaa36aea6_Models-Rho-cover.avif"
+                                                alt="" class="chair-img-default">
+
+                                            <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a033d708379c19107ef515_Models-Rho-atmosphere.avif"
+                                                alt="" class="chair-img-hover">
+                                        </div>
+                                        <div class="chair-image-grid-inner-bottom">Rho</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-chair-lounge">
+                            <div class="mobile-chair-lounge-grid">
+                                <div class="chair-lounge-main-inner">
+                                    <a href="" class="chair-image-link">
+                                        <div class="chair-image-grid">
+                                            <div class="chair-image-grid-inner-top chair-image-grid-inner-top-mobile">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64b142a4eecb5e93f7d5d1ce_paloma.avif"
+                                                    alt="" class="chair-img-default">
+
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a033b661f8ca9a1e7546c0_Models-Nomi-atmosphere-p-800.avif"
+                                                    alt="" class="chair-img-hover">
+                                            </div>
+                                            <div
+                                                class="chair-image-grid-inner-bottom chair-image-grid-inner-bottom-mobile">
+                                                Paloma</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="chair-lounge-main-inner">
+                                    <a href="" class="chair-image-link">
+                                        <div class="chair-image-grid">
+                                            <div class="chair-image-grid-inner-top chair-image-grid-inner-top-mobile">
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64b142d7d48480204ce98b48_tg-2.avif"
+                                                    alt="" class="chair-img-default">
+
+                                                <img src="https://cdn.prod.website-files.com/64917d4d270212395ea3e253/64a033b661f8ca9a1e7546c0_Models-Nomi-atmosphere-p-800.avif"
+                                                    alt="" class="chair-img-hover">
+                                            </div>
+                                            <div
+                                                class="chair-image-grid-inner-bottom chair-image-grid-inner-bottom-mobile">
+                                                TG-2</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="height-space-160 border-bottom"></div>
+                </div>
+                <!-- nomi section 6 end -->
+
+                <!-- footer section start -->
+                <div class="section product-range">
+                    <div class="container">
+                        <div class="space-100"></div>
+                        <div class="product-range-horizontal" style="opacity: 1;">
+                            <div class="product-range-horizontal-left product-range-heading">
+                                <h2 class="text-colour-dark-green">Expand your<br>
+                                    <span class="mr-left-100 span-style-italic">product range</span>
+                                    with Indecom.
+                                </h2>
+                            </div>
+                            <div class="product-range-horizontal-right footer-section-img">
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e975f67dfb853907281_Footer-C2.webp"
+                                    class="product-range-before-img" alt="">
+                                <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f0e970d77ed80d9641d1a_Footer-C1-p-500.webp"
+                                    class="product-range-after-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="container">
+                        <div class="space-80"></div>
+                        <div class="footer-section-wrapper">
+                            <div class="footer-section-top">
+                                <div class="footer-section-link">
+                                    <div class="footer-section-link-main">
+                                        <div class="footer-section-link-caps">Models</div>
+                                        <div class="footer-section-link-list">
+                                            <div class="footer-section-products">
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Ethy</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Nomi</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Axis</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Rho</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">TG-2</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Paloma</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-section-link-main">
+                                        <div class="footer-section-link-caps">legacy Modelss</div>
+                                        <div class="footer-section-link-list">
+                                            <div class="footer-section-products">
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Kion</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Myto</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Omega</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-section-link-main">
+                                        <div class="footer-section-link-caps">Information</div>
+                                        <div class="footer-section-link-list">
+                                            <div class="footer-section-products">
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">About us</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Philosophy</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Contact</a>
+                                                </div>
+                                                <div class="footer-section-items">
+                                                    <a href="" class="footer-section-item-style">Privacy Policy</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-section-content">
+                                    <div class="footer-section-content-inner">
+                                        <p class="footer-section-content-space">
+                                            <span class="opacity-0">AAA</span>
+                                            Are you representing a furniture firm looking for fresh new designs or are
+                                            you a
+                                            designer with a dream to show the world your designs? Don't hesitate to
+                                            contact us.
+                                        </p>
+                                        <a href="#" class="common-btn btn-main line-block">
+                                            <div>GET IN TOUCH</div>
+                                            <img src="https://cdn.prod.website-files.com/64917d03843009bf006cab34/649ea5aad510e5cbb18b7339_Arrow.svg"
+                                                alt=""
+                                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                                class="arrow-icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-section-bottom">
+                                <div class="footer-bottom-left">
+                                    Copyright © Indecom BV 2025
+                                </div>
+                                <div class="footer-bottom-right">
+                                    Utrechtsestraatweg 91, 3911 TS, Rhenen, The Netherlands — +31 (0)317 619708 — KvK:
+                                    97682896
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer section end -->
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+
+        <!-- === home page main script end === -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                const $slider = $('.mySlickSlider');
+
+                // Hides previous slides (opacity 0) manually to clean up LEFT SIDE
+                function handlePastSlides(currentIdx) {
+                    $('.slick-slide-item').each(function () {
+                        let slideIndex = $(this).attr('data-slick-index');
+                        if (slideIndex < currentIdx) {
+                            $(this).addClass('slick-past');
+                        } else {
+                            $(this).removeClass('slick-past');
+                        }
+                    });
+                }
+
+                $slider.on('init reInit afterChange', function (event, slick, currentSlide) {
+                    handlePastSlides(currentSlide || 0);
+                });
+
+                $slider.slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 500,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    swipeToSlide: true,
+                    touchThreshold: 10,
+                    slidesToShow: 3.9,
+
+                    responsive: [
+                        {
+                            breakpoint: 1440,
+                            settings: {
+                                slidesToShow: 3.7,
+                            }
+                        },
+                        {
+                            breakpoint: 1025,
+                            settings: {
+                                slidesToShow: 3.5,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1.5,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1.2,
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+
+
+
+
+</body>
+
+</html>

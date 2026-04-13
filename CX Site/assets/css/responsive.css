@@ -1,3 +1,17 @@
+@media screen and (max-width: 1024px) {
+
+    /* === ethy section slider start === */
+    .mySlickSlider .slick-list {
+        margin: 0 -25px;
+    }
+
+    .slick-slide-item {
+        padding: 0 15px;
+    }
+
+    /* === ethy section slider end === */
+}
+
 @media (max-width: 991px) {
 
     /* common start */
@@ -304,6 +318,191 @@
         height: 100%;
     }
 
+    /*  <!-- === about section 5 end === --> */
+
+    /*  <!-- === contact section 1 start === --> */
+    .space-100 {
+        height: 6.25rem;
+    }
+
+    .contact-form-horizontal {
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+        flex-direction: column;
+    }
+
+    .contact-form-left {
+        max-width: none;
+    }
+
+    .contact-form-right {
+        max-width: none;
+    }
+
+    .contact-form-heading {
+        font-size: 2.5rem;
+    }
+
+    .text-fild {
+        grid-column-gap: .5rem;
+        grid-row-gap: .5rem;
+    }
+
+    .form-fild-lable {
+        font-size: 1rem;
+    }
+
+    .text-fild input,
+    .input-fild.select-drop-space {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /*  <!-- === contact section 1 end === --> */
+
+
+    /*  <!-- === contact section 2 start === --> */
+    .contact-section-2-text-holder-top {
+        font-size: .9375rem;
+    }
+
+    .content-holder-space {
+        letter-spacing: -.045rem;
+        font-size: 1.5rem;
+    }
+
+
+    /*  <!-- === contact section 2 end === --> */
+
+    /*  <!-- === philosophy section 1 start === --> */
+    .philoshopy-section-1 {
+        height: 50vh;
+        margin-top: 5rem;
+    }
+
+    .philoshopy-section-1-text-block {
+        z-index: 1;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        position: relative;
+    }
+
+    h4 {
+        letter-spacing: -.045em;
+        font-size: 2.125rem;
+        line-height: 1.15;
+    }
+
+    .philoshopy-section-1-text-block-small {
+        font-size: 1.125rem;
+    }
+
+    .philoshopy-section-1-img-5 {
+        inset: 1.5em 1.125em auto auto;
+
+    }
+
+    /*  <!-- === philosophy section 1 end === --> */
+
+    /*  <!-- === philosophy section 2 start === --> */
+    .philoshopy-section-2-card-grid {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .philoshopy-section-2-card-grid-right-text {
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 2.5rem;
+        max-width: 32.5rem;
+    }
+
+    .philoshopy-section-2-card-grid-right-text h5 {
+        font-size: 1.75rem;
+    }
+
+    .philoshopy-section-2-card-grid-right-text-large {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .philoshopy-section-2-bottom-grid {
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    .philoshopy-section-2-bottom-card-text {
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .philoshopy-section-2-bottom-card-text-title {
+        font-size: 1.125rem;
+    }
+
+    .philoshopy-section-2-bottom-card-text-large {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    /*  <!-- === philosophy section 2 end === --> */
+
+    /*  <!-- === philosophy section 3 start === --> */
+    .philoshopy-section-3-card-flex {
+        align-items: flex-start;
+    }
+
+    .philoshopy-section-3-partner img {
+        max-width: none;
+    }
+
+    .philoshopy-section-3-partner-text {
+        font-size: 1rem;
+    }
+
+    .philoshopy-section-3-card-flex>img {
+        max-width: 7.5em;
+    }
+
+    .philoshopy-section-3-card-content-text p {
+        font-size: 1rem;
+    }
+
+    /*  <!-- === philosophy section 3 end === --> */
+
+
+    /*  <!-- === philosophy section 4 start === --> */
+
+    .phiphiloshopy-section-4-bottom-top-main {
+        grid-column-gap: 2.25rem;
+        grid-row-gap: 4.4375rem;
+    }
+
+    .phiphiloshopy-section-4-bottom-top-main-box-number {
+        max-width: 4rem;
+        height: 2rem;
+    }
+
+    .phiphiloshopy-section-4-bottom-top-main-box-content {
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-content-text-top {
+        letter-spacing: -.045rem;
+        font-size: 1.5rem;
+    }
+
+    .phiphiloshopy-section-4-bottom-top-main-box-content-text-bottom {
+        font-size: 1.125rem;
+    }
+
+    .text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-number-text {
+        font-size: 1rem;
+    }
+
+    /*  <!-- === philosophy section 4 end === --> */
+
+
 }
 
 
@@ -351,15 +550,42 @@
 
 }
 
+@media (max-width:768px) {
+
+    /* === ethy section slider start === */
+    .mySlickSlider .slick-list {
+        margin: 0 -15px;
+    }
+
+    .slick-slide-item {
+        padding: 0 10px;
+    }
+
+    /* === ethy section slider end === */
+
+}
+
 
 @media (max-width: 767px) {
+
+    /* chair hover effect mobile start */
+    .mobile-chair-lounge {
+        display: block;
+    }
+
+    .chair-lounge-main {
+        display: none;
+    }
+
+    /* chair hover effect mobile start */
+    
     /* === navbar menubutton start === */
 
     .cursor {
         display: none !important;
     }
 
-    .slider-section-main {
+    .cx-slider-section {
         cursor: auto !important;
     }
 
@@ -752,4 +978,233 @@
     }
 
     /*  <!-- === about section 5 end === --> */
+
+    /*  <!-- === contact section 1 start === --> */
+    .space-100 {
+        height: 3.125rem;
+    }
+
+    .contact-form-heading {
+        font-size: 1.75rem;
+    }
+
+    .form-flex {
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    /*  <!-- === contact section 1 end === --> */
+
+
+    /*  <!-- === contact section 2 start === --> */
+    .contact-section-2-grid {
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        display: flex;
+    }
+
+    .contact-section-2-grid-left {
+        grid-column-gap: 3.5rem;
+        grid-row-gap: 3.5rem;
+        padding-top: 5rem;
+        padding-left: 1.25rem;
+    }
+
+
+    .content-holder-space {
+        font-size: 1.5rem;
+    }
+
+    .contact-section-2-img {
+        height: auto;
+    }
+
+    /*  <!-- === contact section 2 end === --> */
+
+
+    /*  <!-- === philosophy section 1 start === --> */
+    .philoshopy-section-1 {
+        height: 58vh;
+        margin-top: 3.9rem;
+    }
+
+    .philoshopy-section-1-text-block {
+        max-width: none;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    h4 {
+        letter-spacing: -.045em;
+        font-size: 2.125rem;
+        line-height: 1.15;
+    }
+
+    .philoshopy-section-1-img-1 {
+        max-width: 11.7131rem;
+        bottom: 4.0625rem;
+        left: -2.5875rem;
+    }
+
+    .philoshopy-section-1-img-2 {
+        max-width: 7.375rem;
+        bottom: 2.4375rem;
+        right: -2.5rem;
+    }
+
+    .philoshopy-section-1-img-3 {
+        display: none;
+    }
+
+    .philoshopy-section-1-img-4 {
+        max-width: 13.25rem;
+        top: 4.625rem;
+        left: -6.675rem;
+    }
+
+    .philoshopy-section-1-img-5 {
+        max-width: 12.545rem;
+        top: 2.5rem;
+        right: -15em;
+    }
+
+    /*  <!-- === philosophy section 1 end === --> */
+
+
+    /*  <!-- === philosophy section 2 start === --> */
+    .philoshopy-section-2-card-grid {
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 2.5rem;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .philoshopy-section-2-card-grid-reverse {
+        flex-direction: column-reverse
+    }
+
+    .philoshopy-section-2-card-aliment-left {
+        align-items: center
+    }
+
+    .philoshopy-section-2-card-grid-left img {
+        height: auto;
+    }
+
+    .philoshopy-section-2-card-grid-right-text {
+        grid-column-gap: 1.25rem;
+        grid-row-gap: 1.25rem;
+    }
+
+    .philoshopy-section-2-card-grid-right-text h5 {
+        font-size: 1.75rem;
+    }
+
+    .philoshopy-section-2-card-grid-right-text-large {
+        font-size: 1rem;
+    }
+
+    .philoshopy-section-2-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .philoshopy-section-2-bottom-card {
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        padding-top: 1.5rem;
+        padding-right: 0;
+    }
+
+    .philoshopy-section-2-bottom-card-img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*  <!-- === philosophy section 2 end === --> */
+
+    /*  <!-- === philosophy section 3 start === --> */
+    .philoshopy-section-3-slider-main-slide {
+        margin-top: 5rem;
+    }
+
+    .philoshopy-section-3-slider-wrapper-card-content {
+        height: 20rem;
+        padding: 2rem;
+    }
+
+    .philoshopy-section-3-card-flex {
+        grid-column-gap: 2.0625rem;
+        grid-row-gap: 2.0625rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    img.philoshopy-section-3-card-flex-img {
+        max-width: none;
+    }
+
+    .philoshopy-section-3-partner {
+        grid-column-gap: .375rem;
+        grid-row-gap: .375rem;
+        padding: .53125rem .625rem;
+    }
+
+    .philoshopy-section-3-card-content-text-full {
+        font-size: 1rem;
+    }
+
+    .philoshopy-section-3-card-flex>img {
+        max-width: none;
+    }
+
+    /*  <!-- === philosophy section 3 end === --> */
+
+
+    /*  <!-- === philosophy section 4 start === --> */
+
+    .phiphiloshopy-section-4-bottom-top-main {
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+        flex-direction: column;
+    }
+
+
+
+
+    .phiphiloshopy-section-4-bottom-top-main-box {
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        border-bottom: 1px solid #383f3d;
+        max-width: none;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    h3.text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-content-text-top {
+        font-size: 1.5rem;
+    }
+
+    .border-process-1 {
+        display: none;
+    }
+
+    .phiphiloshopy-section-4-bottom-top-main.phiphiloshopy-section-4-bottom-top-main-margin {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .phiphiloshopy-section-4-space-remove {
+        display: none;
+    }
+
+    /*  <!-- === philosophy section 4 end === --> */
+}
+
+
+@media screen and (max-width: 479px) {
+    .philoshopy-section-1 {
+        height: 57.1875rem;
+    }
 }

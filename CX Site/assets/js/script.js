@@ -20,25 +20,26 @@ buttons.forEach(button => {
 
 
 // < === === crafted ready section image animation start === ===>
+if (document.querySelector(".crafted-ready-section__right_img img")) {
+    gsap.fromTo(
+        ".crafted-ready-section__right_img img",
+        {
+            y: "10em"   // Start
+        },
+        {
+            y: "-10em", // End
 
-gsap.fromTo(
-    ".crafted-ready-section__right_img img",
-    {
-        y: "10em"   // Start
-    },
-    {
-        y: "-10em", // End
+            ease: "none",
 
-        ease: "none",
-
-        scrollTrigger: {
-            trigger: ".crafted-ready-section",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true
+            scrollTrigger: {
+                trigger: ".crafted-ready-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
         }
-    }
-);
+    );
+}
 // < === === crafted ready section image animation end === ===>
 
 
@@ -114,88 +115,89 @@ let mm = gsap.matchMedia();
 
 mm.add("(min-width: 768px)", () => {
     const items = document.querySelectorAll(".pareallax-block");
+    if (items.length > 0 && document.querySelector(".parallax-section")) {
+        items.forEach((item, index) => {
+            if (index === 0) {
+                gsap.set(item, { height: "46vh" });
+                gsap.set(item.querySelector("img"), { height: "42vh" });
+                gsap.set(item.querySelector(".pareallax-number"), { scale: 1, opacity: 1 });
+                gsap.set(item.querySelector(".pareallax-text"), { opacity: 1 });
+            } else {
+                gsap.set(item, { height: "17vh" });
+                gsap.set(item.querySelector("img"), { height: "13vh" });
+                gsap.set(item.querySelector(".pareallax-number"), { scale: 0.47, opacity: 0.62 });
+                gsap.set(item.querySelector(".pareallax-text"), { opacity: 0.4 });
+            }
+        });
 
-    items.forEach((item, index) => {
-        if (index === 0) {
-            gsap.set(item, { height: "46vh" });
-            gsap.set(item.querySelector("img"), { height: "42vh" });
-            gsap.set(item.querySelector(".pareallax-number"), { scale: 1, opacity: 1 });
-            gsap.set(item.querySelector(".pareallax-text"), { opacity: 1 });
-        } else {
-            gsap.set(item, { height: "17vh" });
-            gsap.set(item.querySelector("img"), { height: "13vh" });
-            gsap.set(item.querySelector(".pareallax-number"), { scale: 0.47, opacity: 0.62 });
-            gsap.set(item.querySelector(".pareallax-text"), { opacity: 0.4 });
-        }
-    });
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".parallax-section",
+                start: "top top",
+                end: "bottom bottom",
+                pin: ".parallax-container",
+                scrub: 1
+            }
+        });
 
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".parallax-section",
-            start: "top top",
-            end: "bottom bottom",
-            pin: ".parallax-container",
-            scrub: 1
-        }
-    });
+        items.forEach((item, index) => {
+            if (index === items.length - 1) return;
 
-    items.forEach((item, index) => {
-        if (index === items.length - 1) return;
+            const nextItem = items[index + 1];
 
-        const nextItem = items[index + 1];
-
-        tl.to(item, {
-            height: "17vh",
-            duration: 1,
-            ease: "power2.inOut"
-        }, index)
-
-            .to(item.querySelector("img"), {
-                height: "13vh",
+            tl.to(item, {
+                height: "17vh",
                 duration: 1,
                 ease: "power2.inOut"
             }, index)
 
-            .to(item.querySelector(".pareallax-number"), {
-                scale: 0.47,
-                opacity: 0.62,
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
+                .to(item.querySelector("img"), {
+                    height: "13vh",
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
 
-            .to(item.querySelector(".pareallax-text"), {
-                opacity: 0.4,
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
+                .to(item.querySelector(".pareallax-number"), {
+                    scale: 0.47,
+                    opacity: 0.62,
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
 
-            .to(nextItem, {
-                height: "46vh",
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
+                .to(item.querySelector(".pareallax-text"), {
+                    opacity: 0.4,
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
 
-
-            .to(nextItem.querySelector("img"), {
-                height: "42vh",
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
-
-            .to(nextItem.querySelector(".pareallax-number"), {
-                scale: 1,
-                opacity: 1,
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
+                .to(nextItem, {
+                    height: "46vh",
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
 
 
-            .to(nextItem.querySelector(".pareallax-text"), {
-                opacity: 1,
-                duration: 1,
-                ease: "power2.inOut"
-            }, index);
-    });
+                .to(nextItem.querySelector("img"), {
+                    height: "42vh",
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
+
+                .to(nextItem.querySelector(".pareallax-number"), {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index)
+
+
+                .to(nextItem.querySelector(".pareallax-text"), {
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power2.inOut"
+                }, index);
+        });
+    }
 });
 // < === === pareallax animation end === ===>
 
@@ -304,7 +306,7 @@ if (aboutHeroSection) {
 // < === === about page transparent navbar animation end === ===>
 
 // < === === slider swiper initialization start === ===>
-const swiperMain = new Swiper(".slider-centetr-main.swiper", {
+const swiperMain = new Swiper(".cx-slider-swiper.swiper", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 40,
@@ -313,13 +315,14 @@ const swiperMain = new Swiper(".slider-centetr-main.swiper", {
     speed: 800,
     grabCursor: false, // Using custom cursor instead
 });
+
 // < === === slider swiper initialization end === ===>
 
 // < === === custom cursor logic start === ===>
-const sliderSection = document.querySelector('.slider-section-main');
+const sliderSection = document.querySelector('.cx-slider-section');
 const cursor = document.querySelector('.cursor');
 const cursorDot = document.querySelector('.cursor-dot');
-const swiperContainer = document.querySelector('.slider-centetr-main.swiper');
+const swiperContainer = document.querySelector('.cx-slider-swiper.swiper');
 
 if (sliderSection && cursor && cursorDot) {
     // Optimized position setters
@@ -458,5 +461,171 @@ const swiperPartners = new Swiper(".philoshopy-partners-swiper", {
     }
 });
 // < === === philoshopy section 3 end === ===>
+
+// < === === reveal animation start === ===>
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".reveal-img").forEach((img) => {
+    if (img.parentElement.classList.contains("reveal-wrapper")) return;
+
+    const imgStyle = window.getComputedStyle(img);
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("reveal-wrapper");
+
+    const isBlock = imgStyle.display === 'block';
+    wrapper.style.display = isBlock ? 'flex' : 'inline-flex';
+
+    wrapper.style.width = imgStyle.width === "0px" ? "auto" : imgStyle.width;
+    wrapper.style.height = imgStyle.height === "0px" ? "auto" : imgStyle.height;
+    wrapper.style.margin = imgStyle.margin;
+    wrapper.style.position = imgStyle.position === 'static' ? 'relative' : imgStyle.position;
+
+    wrapper.style.top = imgStyle.top;
+    wrapper.style.left = imgStyle.left;
+    wrapper.style.right = imgStyle.right;
+    wrapper.style.bottom = imgStyle.bottom;
+
+    wrapper.style.flex = imgStyle.flex;
+    wrapper.style.gridArea = imgStyle.gridArea;
+    wrapper.style.alignSelf = imgStyle.alignSelf;
+    wrapper.style.justifySelf = imgStyle.justifySelf;
+    wrapper.style.borderRadius = imgStyle.borderRadius;
+
+    img.parentNode.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+
+    img.style.width = "100%";
+    img.style.height = "100%";
+    img.style.margin = "0";
+    img.style.position = "static";
+    img.style.borderRadius = "inherit";
+    img.style.objectFit = imgStyle.objectFit;
+    img.style.opacity = "1";
+
+    gsap.set(wrapper, { autoAlpha: 0 });
+
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper,
+            start: "-50% 85%",
+            toggleActions: "play none none none",
+            once: true,
+        }
+    });
+
+    tl.to(wrapper, { autoAlpha: 1, duration: 0.8, ease: "linear" });
+
+    tl.from(wrapper, {
+        yPercent: 100,
+        duration: 1.2,
+        ease: "power3.out"
+    }, 0);
+
+    tl.from(img, {
+        yPercent: -100,
+        duration: 1.2,
+        ease: "power3.out"
+    }, 0);
+});
+
+setTimeout(() => {
+    ScrollTrigger.refresh();
+}, 200);
+
+// < === === reveal animation end === ===>
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(".footer-section-img",
+    {
+        opacity: 0
+    },
+    {
+        opacity: 1,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: ".footer-section-img",
+            start: "top bottom",
+            end: "top center",
+            scrub: true
+        }
+    }
+);
+
+// const track = document.querySelector(".ethy-section-slider-main-slider-card-holder");
+// const slides = gsap.utils.toArray(".ethy-section-slider-main-slider-card");
+// const wrapper = document.querySelector(".ethy-section-slider-main-slider-holder");
+
+// const currentEl = document.getElementById("ethy-current-slide");
+// const totalEl = document.getElementById("ethy-total-slides");
+
+// totalEl.innerText = String(slides.length).padStart(2, "0");
+
+// let slideWidth = 0;
+// let maxX = 0;
+
+// // 🔥 setup
+// function setupSlider() {
+//     const gap = parseFloat(getComputedStyle(track).gap) || 0;
+//     slideWidth = slides[0].offsetWidth + gap;
+
+//     const totalWidth = slideWidth * slides.length;
+//     const visibleWidth = wrapper.offsetWidth;
+
+//     maxX = -(totalWidth - visibleWidth);
+
+//     gsap.set(track, { x: 0 });
+// }
+
+// // 🔥 counter
+// function updateCounter(x) {
+//     let index = Math.round(Math.abs(x) / slideWidth);
+//     index = Math.min(index, slides.length - 1);
+//     currentEl.innerText = String(index + 1).padStart(2, "0");
+// }
+
+// // 🔥 SNAP FUNCTION
+// function snapX(value) {
+//     return Math.round(value / slideWidth) * slideWidth;
+// }
+
+// // 🔥 draggable
+// let draggable = Draggable.create(track, {
+//     type: "x",
+//     inertia: true,
+
+//     bounds: {
+//         minX: () => maxX,
+//         maxX: 0
+//     },
+
+//     snap: snapX, // 🔥 main magic
+
+//     onDragEnd: function () {
+//         gsap.to(track, {
+//             x: snapX(this.x),
+//             duration: 0.4,
+//             ease: "power3.out"
+//         });
+//     },
+
+//     onThrowUpdate: function () {
+//         updateCounter(this.x);
+//     }
+// })[0];
+
+// // init
+// setupSlider();
+
+// // resize
+// window.addEventListener("resize", () => {
+//     setupSlider();
+//     draggable.applyBounds({
+//         minX: maxX,
+//         maxX: 0
+//     });
+// });
+
 
 
