@@ -1534,7 +1534,7 @@
     .ethy-section-2-flex-left-point-main {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        font-size: 1.75rem;
+        font-size: 1.05rem;
     }
 
     /* ethy section 2 end */
@@ -1646,7 +1646,7 @@
 
 
     .ethy-section-slider-main-slider-card-holder-main-img {
-        height: auto;
+        height: 400px;
         width: 100%;
     }
 
@@ -1660,10 +1660,6 @@
 
     .ethy-section-slider-main-slider-card-holder-main-text-1 {
         font-size: 1.2rem;
-    }
-
-    .ethy-section-slider-main-slider-card-holder-main-img {
-        height: auto;
     }
 
     .ethy-section-slider-main-head-counter-holder-number {

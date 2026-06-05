@@ -1035,6 +1035,10 @@ html.w-mod-touch * {
 
 }
 
+.range-expansion {
+    transform: translateY(10px);
+}
+
 /* === parallax-section end === */
 
 
@@ -1261,11 +1265,29 @@ html.w-mod-touch * {
     color: #796c5c;
 }
 
+/* Default (solid header): hide brown arrow, show white arrow */
+.header-nav-button .nav-btn-arrow img[src*="Arrow%20(1)"] {
+    display: none;
+}
+
+.header-nav-button .nav-btn-arrow img[src*="Arrow.svg"]:not([src*="Arrow%20(1)"]) {
+    display: block;
+}
+
+/* Transparent header: show brown arrow, hide white arrow */
+.about-us-transparent .header-nav-button .nav-btn-arrow img[src*="Arrow%20(1)"] {
+    display: block;
+}
+
+.about-us-transparent .header-nav-button .nav-btn-arrow img[src*="Arrow.svg"]:not([src*="Arrow%20(1)"]) {
+    display: none;
+}
+
 /* === about-us nav bar end === */
 
 /* === about banner start === */
 .section.about-section {
-    background-image: url("https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a578ff16680548af93b389_About-hero-visual.png");
+    background-image: url("../images/about-us-page-banner-section.png");
     background-position: 50%;
     background-size: cover;
     justify-content: space-between;
@@ -1511,7 +1533,7 @@ html.w-mod-touch * {
 }
 
 .about-section-3-grid-right {
-    background-image: url("https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b583b90392da1f119f_Quote-background.webp");
+    background-image: url("../images/about-us-page-section3-right-background.webp");
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -1729,7 +1751,7 @@ html.w-mod-touch * {
 }
 
 .about-section-5-grid-right {
-    background-image: url("https://cdn.prod.website-files.com/64917d03843009bf006cab34/64a008b5e7e4dcda62dcc4b1_Sustainability-background.webp");
+    background-image: url("../images/about-section-5-grid-right-background.webp");
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -2212,7 +2234,7 @@ select:not(:-internal-list-box):not([multiple]) option {
 
 /*  <!-- === philoshopy section 3 start === --> */
 .philoshopy-section-3 {
-    background-image: url(https://cdn.prod.website-files.com/64917d03843009bf006cab34/649f20bb5522b0e5c3b4e902_AS_Becker-min.webp);
+    background-image: url(../images/philoshopy-section-3-background.webp);
     background-size: cover;
     background-position: 50%;
 }

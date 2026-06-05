@@ -13,22 +13,22 @@ gsap.from(".hero-animate-right", {
 document.addEventListener('mouseover', (e) => {
     const button = e.target.closest('.header-nav-button, .common-btn, .slider-button-ancore');
     if (button) {
-        const arrow = button.querySelector('.arrow-icon');
+        const arrows = button.querySelectorAll('.arrow-icon');
         button.style.opacity = '0.7';
-        if (arrow) {
+        arrows.forEach(arrow => {
             arrow.style.transform = 'rotateZ(45deg)';
-        }
+        });
     }
 });
 
 document.addEventListener('mouseout', (e) => {
     const button = e.target.closest('.header-nav-button, .common-btn, .slider-button-ancore');
     if (button) {
-        const arrow = button.querySelector('.arrow-icon');
+        const arrows = button.querySelectorAll('.arrow-icon');
         button.style.opacity = '1';
-        if (arrow) {
+        arrows.forEach(arrow => {
             arrow.style.transform = 'rotateZ(0deg)';
-        }
+        });
     }
 });
 // < === === button hover effect end === ===>
@@ -61,8 +61,8 @@ if (document.querySelector(".crafted-ready-section__right_img img")) {
 
 // <=== Scroll Smooth Start ===>
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-ScrollSmoother.create({
+// Change start: Save ScrollSmoother instance to control background scroll - 03-06-2026
+const smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
 
@@ -73,6 +73,7 @@ ScrollSmoother.create({
     speed: 1,
     ease: "expo.out"
 });
+// Change end - 03-06-2026
 // <=== Scroll Smooth End ===>
 
 // < === === mobile menu toggle start === ===>
@@ -89,11 +90,17 @@ if (mobileMenuBtn && mobileMenuOverlay) {
     mobileMenuBtn.addEventListener('click', () => {
         updateMobileMenuTop();
         if (!isMobileMenuOpen) {
+            // Change start: Calculate correct height and pause background scroll - 03-06-2026
+            const headerHeight = document.querySelector('.header-main').offsetHeight;
+            if (typeof smoother !== 'undefined' && smoother) {
+                smoother.paused(true);
+            }
             gsap.to(mobileMenuOverlay, {
-                height: "100vh",
+                height: `calc(100vh - ${headerHeight - 1}px)`,
                 duration: 0.8,
                 ease: "power4.inOut"
             });
+            // Change end - 03-06-2026
             gsap.fromTo('.mobile-menu-item',
                 { y: 20, opacity: 0 },
                 { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, delay: 0.3, ease: "power2.out" }
@@ -104,11 +111,16 @@ if (mobileMenuBtn && mobileMenuOverlay) {
             // Animation for the button lines (optional)
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 0.5 });
         } else {
+            // Change start: Reset height and resume background scroll - 03-06-2026
+            if (typeof smoother !== 'undefined' && smoother) {
+                smoother.paused(false);
+            }
             gsap.to(mobileMenuOverlay, {
                 height: 0,
                 duration: 0.6,
                 ease: "power4.inOut"
             });
+            // Change end - 03-06-2026
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 1 });
@@ -118,7 +130,13 @@ if (mobileMenuBtn && mobileMenuOverlay) {
     // Close menu when clicking outside or on a link (optional, depends on UX)
     window.addEventListener('resize', () => {
         if (window.innerWidth > 991 && isMobileMenuOpen) {
+            // Change start: Reset mobile menu height, class and unpause scroll smoother on resize - 03-06-2026
             mobileMenuOverlay.classList.remove('is-open');
+            gsap.set(mobileMenuOverlay, { height: 0 });
+            if (typeof smoother !== 'undefined' && smoother) {
+                smoother.paused(false);
+            }
+            // Change end - 03-06-2026
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
         }
