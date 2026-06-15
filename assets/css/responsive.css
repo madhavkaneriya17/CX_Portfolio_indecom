@@ -138,7 +138,7 @@
         margin-left: 1em
     }
 
-    .footer-section-top {
+    .footer-section__top {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         flex-direction: column;
@@ -148,42 +148,42 @@
         display: flex;
     }
 
-    .header-right-mobile {
+    .header__right-mobile {
         display: block;
     }
 
-    .header-right {
+    .header__right {
         display: none;
     }
 
-    .footer-section-content-inner {
+    .footer-section__content-inner {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         max-width: 32.5rem;
     }
 
-    .footer-section p.footer-section-content-space {
+    .footer-section p.footer-section__content-space {
         font-size: 1.125rem;
     }
 
-    .footer-section-link-main {
+    .footer-section__link-main {
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
 
-    .footer-section a.footer-section-item-style {
+    .footer-section a.footer-section__item-style {
         font-size: 1.125rem;
     }
 
-    .footer-section-link-caps {
+    .footer-section__link-caps {
         font-size: .875rem;
     }
 
-    .product-range-heading .mr-left-100 {
+    .product-range__heading .mr-left-100 {
         margin-left: 1em;
     }
 
-    .product-range-heading {
+    .product-range__heading {
         max-width: none;
     }
 
@@ -221,92 +221,92 @@
     /*  <!-- === about banner end === --> */
 
     /*  <!-- === about section 2 start === --> */
-    .about-section-2-grid {
+    .about-section-2__grid {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
 
-    .about-section-2-left {
+    .about-section-2__left {
         font-size: 1.125rem;
     }
 
-    .about-section-2-right {
+    .about-section-2__right {
         font-size: 1.125rem;
     }
 
 
-    .about-section-2-history {
+    .about-section-2__history {
         grid-column-gap: 6em;
         grid-row-gap: 6em;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
 
-    .about-section-2-history-left {
+    .about-section-2__history-left {
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
         flex-direction: column;
     }
 
-    .about-section-2-history-left-two {
+    .about-section-2__history-left-two {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         max-width: 32.5rem;
     }
 
-    .about-section-2-history p.about-section-2-text-style {
+    .about-section-2__history p.about-section-2__text-style {
         font-size: 1.125rem;
     }
 
-    .about-section2-imtro-location {
+    .about-section2__imtro-location {
         padding: .375rem .625rem;
     }
 
-    .about-section2-imtro-location-text {
+    .about-section2__imtro-location-text {
         font-size: 1rem;
     }
 
-    .about-section-2-history-right {
+    .about-section-2__history-right {
         max-width: none;
     }
 
-    .about-section-2-history img.about-section2-history-right-img-large {
+    .about-section-2__history img.about-section2__history-right-img-large {
         max-width: 25em;
     }
 
     /*  <!-- === about section 2 end === --> */
 
     /*  <!-- === about section 3 start === --> */
-    .about-section-3-grid-left {
+    .about-section-3__grid-left {
         grid-column-gap: 3.5rem;
         grid-row-gap: 3.5rem;
         padding: 5rem 1.25rem;
     }
 
-    .about-section-3-grid-left-small-text-container {
+    .about-section-3__grid-left-small-text-container {
         font-size: 1.125rem;
     }
 
     /*  <!-- === about section 3 end === --> */
 
     /*  <!-- === about section 4 start === --> */
-    .about-section-4-grid-right-small {
+    .about-section-4__grid-right-small {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         max-width: 32.5rem;
     }
 
-    .text-indent.about-section-4-grid-right-text {
+    .text-indent.about-section-4__grid-right-text {
         font-size: 1.125rem;
     }
 
-    .about-section-4-padding-left {
+    .about-section-4__padding-left {
         padding-right: 0;
     }
 
-    .about-section-4-grid-2-left-img-content-2 {
+    .about-section-4__grid-2-left-img-content-2 {
         margin-right: 4em;
         font-size: 1rem;
     }
@@ -315,17 +315,17 @@
 
     /*  <!-- === about section 5 start === --> */
 
-    .about-section-5-grid-left {
+    .about-section-5__grid-left {
         grid-column-gap: 3.5rem;
         grid-row-gap: 3.5rem;
         padding: 5rem 1.25rem;
     }
 
-    .about-section-5-grid-left-bottom {
+    .about-section-5__grid-left-bottom {
         max-width: none;
     }
 
-    .about-section-5-grid-left-bottom-flex {
+    .about-section-5__grid-left-bottom-flex {
         flex-direction: column;
     }
 
@@ -338,16 +338,16 @@
         font-size: 1.125rem;
     }
 
-    .about-section-5-grid-right {
+    .about-section-5__grid-right {
         object-fit: cover;
         height: 100%;
     }
 
-    .about-section-5-grid-left-top h4 {
+    .about-section-5__grid-left-top h4 {
         font-size: 1.75rem;
     }
 
-    .about-section-5-grid-right-center-img {
+    .about-section-5__grid-right-center-img {
         max-width: 15rem;
         height: 15rem;
     }
@@ -359,21 +359,21 @@
         height: 6.25rem;
     }
 
-    .contact-form-horizontal {
+    .contact-form__horizontal {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         flex-direction: column;
     }
 
-    .contact-form-left {
+    .contact-form__left {
         max-width: none;
     }
 
-    .contact-form-right {
+    .contact-form__right {
         max-width: none;
     }
 
-    .contact-form-heading {
+    .contact-form__heading {
         font-size: 2.5rem;
     }
 
@@ -396,7 +396,7 @@
 
 
     /*  <!-- === contact section 2 start === --> */
-    .contact-section-2-text-holder-top {
+    .contact-section-2__text-holder-top {
         font-size: .9375rem;
     }
 
@@ -409,12 +409,12 @@
     /*  <!-- === contact section 2 end === --> */
 
     /*  <!-- === philosophy section 1 start === --> */
-    .philoshopy-section-1 {
+    .philoshopy-section__1 {
         height: 50vh;
         margin-top: 5rem;
     }
 
-    .philoshopy-section-1-text-block {
+    .philoshopy-section-1__text-block {
         z-index: 1;
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
@@ -427,11 +427,11 @@
         line-height: 1.15;
     }
 
-    .philoshopy-section-1-text-block-small {
+    .philoshopy-section-1__text-block-small {
         font-size: 1.125rem;
     }
 
-    .philoshopy-section-1-img-5 {
+    .philoshopy-section-1__img-5 {
         inset: 1.5em 1.125em auto auto;
 
     }
@@ -439,41 +439,41 @@
     /*  <!-- === philosophy section 1 end === --> */
 
     /*  <!-- === philosophy section 2 start === --> */
-    .philoshopy-section-2-card-grid {
+    .philoshopy-section-2__card-grid {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
     }
 
-    .philoshopy-section-2-card-grid-right-text {
+    .philoshopy-section-2__card-grid-right-text {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         max-width: 32.5rem;
     }
 
-    .philoshopy-section-2-card-grid-right-text h5 {
+    .philoshopy-section-2__card-grid-right-text h5 {
         font-size: 1.75rem;
     }
 
-    .philoshopy-section-2-card-grid-right-text-large {
+    .philoshopy-section-2__card-grid-right-text-large {
         font-size: 1rem;
         margin: 0;
     }
 
-    .philoshopy-section-2-bottom-grid {
+    .philoshopy-section-2__bottom-grid {
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
     }
 
-    .philoshopy-section-2-bottom-card-text {
+    .philoshopy-section-2__bottom-card-text {
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
 
-    .philoshopy-section-2-bottom-card-text-title {
+    .philoshopy-section-2__bottom-card-text-title {
         font-size: 1.125rem;
     }
 
-    .philoshopy-section-2-bottom-card-text-large {
+    .philoshopy-section-2__bottom-card-text-large {
         font-size: 1rem;
         margin: 0;
     }
@@ -481,23 +481,23 @@
     /*  <!-- === philosophy section 2 end === --> */
 
     /*  <!-- === philosophy section 3 start === --> */
-    .philoshopy-section-3-card-flex {
+    .philoshopy-section-3__card-flex {
         align-items: flex-start;
     }
 
-    .philoshopy-section-3-partner img {
+    .philoshopy-section-3__partner img {
         max-width: none;
     }
 
-    .philoshopy-section-3-partner-text {
+    .philoshopy-section-3__partner-text {
         font-size: 1rem;
     }
 
-    .philoshopy-section-3-card-flex>img {
+    .philoshopy-section-3__card-flex>img {
         max-width: 7.5em;
     }
 
-    .philoshopy-section-3-card-content-text p {
+    .philoshopy-section-3__card-content-text p {
         font-size: 1rem;
     }
 
@@ -506,31 +506,31 @@
 
     /*  <!-- === philosophy section 4 start === --> */
 
-    .phiphiloshopy-section-4-bottom-top-main {
+    .phiphiloshopy-section-4__bottom-top-main {
         grid-column-gap: 2.25rem;
         grid-row-gap: 4.4375rem;
     }
 
-    .phiphiloshopy-section-4-bottom-top-main-box-number {
+    .phiphiloshopy-section-4__bottom-top-main-box-number {
         max-width: 4rem;
         height: 2rem;
     }
 
-    .phiphiloshopy-section-4-bottom-top-main-box-content {
+    .phiphiloshopy-section-4__bottom-top-main-box-content {
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
 
-    .text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-content-text-top {
+    .text-colour-white.phiphiloshopy-section-4__bottom-top-main-box-content-text-top {
         letter-spacing: -.045rem;
         font-size: 1.5rem;
     }
 
-    .phiphiloshopy-section-4-bottom-top-main-box-content-text-bottom {
+    .phiphiloshopy-section-4__bottom-top-main-box-content-text-bottom {
         font-size: 1.125rem;
     }
 
-    .text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-number-text {
+    .text-colour-white.phiphiloshopy-section-4__bottom-top-main-box-number-text {
         font-size: 1rem;
     }
 
@@ -541,19 +541,19 @@
     }
 
 
-    h3.ethy-section-1-bottom-head {
+    h3.ethy-section-1__bottom-head {
         font-size: 2.5rem;
     }
 
-    .ethy-section-1-bottom-head {
+    .ethy-section-1__bottom-head {
         font-size: 2.5rem;
     }
 
-    .ethy-section-1-bottom {
+    .ethy-section-1__bottom {
         max-width: none;
     }
 
-    .ethy-section-1-top-grid-left {
+    .ethy-section-1__top-grid-left {
         padding-left: 1.25rem;
     }
 
@@ -565,59 +565,59 @@
 
 
     /* <!-- === ethy section 3 start === --> */
-    .ethy-section-3-wrapper-inner-heading-text p {
+    .ethy-section-3__wrapper-inner-heading-text p {
         font-size: 0.9375rem;
     }
 
-    .ethy-section-3-wrapper-inner-conten {
+    .ethy-section-3__wrapper-inner-conten {
         font-size: 0.9375rem;
     }
 
-    .ethy-section-3-wrapper-inner-heading {
+    .ethy-section-3__wrapper-inner-heading {
         font-size: 0.9375rem;
     }
 
     /* <!-- === ethy section 3 end === --> */
 
     /* <!-- === nomi section 5 start === --> */
-    .nomi-sec-5-top-head {
+    .nomi-sec-5__top-head {
         max-width: none;
     }
 
-    .nomi-sec-5-top-head-text p {
+    .nomi-sec-5__top-head-text p {
         font-size: 1.125rem;
     }
 
-    .nomi-sec-5-top-bottom-grid {
+    .nomi-sec-5__top-bottom-grid {
         flex-direction: column;
     }
 
-    .nomi-sec-5-top-bottom-grid-left {
+    .nomi-sec-5__top-bottom-grid-left {
         max-width: none;
     }
 
-    .nomi-sec-5-top-bottom-grid-left img {
+    .nomi-sec-5__top-bottom-grid-left img {
         height: auto;
     }
 
-    .nomi-sec-5-top-bottom-grid-left p {
+    .nomi-sec-5__top-bottom-grid-left p {
         font-size: 1rem;
     }
 
-    .nomi-sec-5-top-bottom-grid-right {
+    .nomi-sec-5__top-bottom-grid-right {
         max-width: none;
     }
 
-    .nomi-sec-5-top-bottom-grid-right img {
+    .nomi-sec-5__top-bottom-grid-right img {
         height: auto;
         width: 100%;
     }
 
-    .nomi-sec-5-top-bottom-grid-right p {
+    .nomi-sec-5__top-bottom-grid-right p {
         font-size: 1rem;
     }
 
-    .nomi-sec-5-top-bottom-grid {
+    .nomi-sec-5__top-bottom-grid {
         grid-row-gap: 4.625rem;
     }
 
@@ -664,12 +664,12 @@
 
 
 @media (max-width: 990px) {
-    .header-main {
+    .header {
         padding: 1rem 1.25rem;
     }
 
 
-    .header-nav-link {
+    .header__nav-link {
         color: #192120;
         margin-right: 0;
         padding-left: 1rem;
@@ -678,11 +678,11 @@
         display: flex;
     }
 
-    nav .header-nav-link:nth-child(4) {
+    nav .header__nav-link:nth-child(4) {
         margin-right: 2rem;
     }
 
-    .header-nav-button {
+    .header__nav-button {
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
         margin-left: 0;
@@ -690,7 +690,7 @@
         font-size: .75rem;
     }
 
-    .home-hero-banner {
+    .home-hero__banner {
         padding-top: 5rem;
     }
 
@@ -727,11 +727,11 @@
 @media (max-width: 767px) {
 
     /* <!-- === chair hover effect mobile start === --> */
-    .mobile-chair-lounge {
+    .mobile-chair__lounge {
         display: block;
     }
 
-    .chair-lounge-main {
+    .chair-lounge__main {
         display: none;
     }
 
@@ -743,11 +743,11 @@
         display: none !important;
     }
 
-    .cx-slider-section {
+    .cx-slider__section {
         cursor: auto !important;
     }
 
-    .mobile-menu-item {
+    .mobile-menu__item {
         letter-spacing: -.045em;
         text-transform: none;
         border-bottom: 1px solid #dde3e2;
@@ -765,16 +765,16 @@
 
     /* <!-- === banner section start === --> */
 
-    .home-hero-banner {
+    .home-hero__banner {
         padding-top: 5rem;
     }
 
-    .home-hero-banner-content {
+    .home-hero-banner__content {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
 
-    .home-hero-banner-head-line {
+    .home-hero-banner__head-line {
         position: static;
     }
 
@@ -785,20 +785,20 @@
         position: relative;
     }
 
-    .home-hero-banner-image {
+    .home-hero-banner__image {
         width: 100%;
         max-width: none;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .home-hero-banner {
+    .home-hero__banner {
         margin-top: 3.9rem;
         padding-top: 2.5rem;
         padding-bottom: 4rem;
     }
 
-    .home-hero-banner-head-line h1 {
+    .home-hero-banner__head-line h1 {
         letter-spacing: -.05em;
     }
 
@@ -833,73 +833,73 @@
     /* <!-- === redefined-section end === --> */
 
     /* <!-- === slider section start === --> */
-    .cx-slider-outer-container {
+    .cx-slider__outer-container {
         min-height: auto;
         margin-bottom: 5rem;
     }
 
-    .cx-slider-inner-container {
+    .cx-slider__inner-container {
         padding-top: 4rem;
     }
 
-    .cx-slider-header-heading {
+    .cx-slider__header-heading {
         max-width: 100%;
         padding: 0 1.25rem;
     }
 
-    .cx-slider-title-h3 {
+    .cx-slider__title-h3 {
         font-size: 2.25rem;
         line-height: 1.1;
     }
 
-    .cx-slider-bg-logo {
+    .cx-slider__bg-logo {
         display: none;
     }
 
-    .cx-slider-swiper.swiper {
+    .cx-slider__swiper.swiper {
         margin-top: 2.5rem;
     }
 
-    .cx-slider-swiper-list.swiper-wrapper {
+    .cx-slider__swiper-list.swiper-wrapper {
         padding-left: 0;
     }
 
-    .cx-slider-swiper-item.swiper-slide {
+    .cx-slider__swiper-item.swiper-slide {
         width: 100% !important;
         padding: 0 1.25rem;
     }
 
-    .cx-slider-item-wrap {
+    .cx-slider__item-wrap {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .cx-slider-product-info {
+    .cx-slider__product-info {
         max-width: 100%;
         order: 2;
         margin-top: 2rem;
     }
 
-    .cx-slider-product-name,
-    .cx-slider-product-sep,
-    .cx-slider-product-motto {
+    .cx-slider__product-name,
+    .cx-slider__product-sep,
+    .cx-slider__product-motto {
         font-size: 1.5rem;
     }
 
-    .cx-slider-product-imgs {
+    .cx-slider__product-imgs {
         width: 100%;
         order: 1;
         justify-content: flex-start;
         position: relative;
     }
 
-    .cx-slider-product-img-1 {
+    .cx-slider__product-img-1 {
         max-width: 80%;
         min-height: auto;
         height: auto;
     }
 
-    .cx-slider-product-img-2 {
+    .cx-slider__product-img-2 {
         max-width: 40%;
         min-height: auto;
         height: auto;
@@ -1037,24 +1037,24 @@
     /* <!-- === partner section end === --> */
 
     /* <!-- === production section start === --> */
-    .product-range-horizontal {
+    .product-range__horizontal {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         flex-direction: column;
     }
 
-    .product-range-horizontal-right {
+    .product-range__horizontal-right {
         padding-bottom: 4rem;
     }
 
 
-    .product-range-horizontal img.product-range-before-img {
+    .product-range__horizontal img.product-range__before-img {
         width: 33%;
         max-width: none;
         height: auto;
     }
 
-    .product-range-horizontal img.product-range-after-img {
+    .product-range__horizontal img.product-range__after-img {
         max-width: 80%;
         height: auto;
         margin-bottom: 0;
@@ -1064,7 +1064,7 @@
     /* <!-- === production section end === --> */
 
     /* <!-- === footer section start === --> */
-    .footer-section-bottom {
+    .footer-section__bottom {
         grid-column-gap: 1.25rem;
         grid-row-gap: 1.25rem;
         flex-direction: column;
@@ -1073,44 +1073,44 @@
         padding-bottom: 1.5rem;
     }
 
-    .footer-bottom-left {
+    .footer-bottom__left {
         font-size: .880rem;
     }
 
-    .footer-bottom-right {
+    .footer-bottom__right {
         font-size: .880rem;
     }
 
     /* <!-- === footer section end === --> */
 
     /*  <!-- === about section 2 start === --> */
-    .about-section-2-history {
+    .about-section-2__history {
         grid-template-columns: 1fr;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
 
-    .about-section-2-history-left {
+    .about-section-2__history-left {
         grid-column-gap: .5rem;
         grid-row-gap: .5rem;
     }
 
-    .about-section-2-history-left-two {
+    .about-section-2__history-left-two {
         grid-column-gap: 1.25rem;
         grid-row-gap: 1.25rem;
     }
 
-    .about-section-2-history-right {
+    .about-section-2__history-right {
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
         flex-direction: column;
     }
 
-    .about-section2-history-right-img-small {
+    .about-section2__history-right-img-small {
         max-width: none;
     }
 
-    .about-section-2-history img.about-section2-history-right-img-large {
+    .about-section-2__history img.about-section2__history-right-img-large {
         max-width: none;
     }
 
@@ -1119,7 +1119,7 @@
 
 
     /*  <!-- === about section 3 start === --> */
-    .about-section-3-grid {
+    .about-section-3__grid {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         flex-direction: column;
@@ -1127,25 +1127,25 @@
         display: flex;
     }
 
-    .about-section-3-grid-left {
+    .about-section-3__grid-left {
         grid-row-gap: 5rem;
         padding-bottom: 0;
     }
 
-    .about-section-3-grid-left-text-container {
+    .about-section-3__grid-left-text-container {
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
     }
 
-    .about-section-3-grid-left-big-text {
+    .about-section-3__grid-left-big-text {
         font-size: 1.75rem;
     }
 
-    .about-section-3-grid-right {
+    .about-section-3__grid-right {
         height: 30rem;
     }
 
-    .about-section-3-grid-right-center-img {
+    .about-section-3__grid-right-center-img {
         max-width: 20.0625rem;
         height: 22rem;
     }
@@ -1153,45 +1153,45 @@
     /*  <!-- === about section 3 end === --> */
 
     /*  <!-- === about section 4 start === --> */
-    .about-section-4-grid {
+    .about-section-4__grid {
         grid-row-gap: 5rem;
         flex-direction: column-reverse;
         grid-template-columns: 1fr;
         display: flex;
     }
 
-    .about-section-4-grid-left-img {
+    .about-section-4__grid-left-img {
         width: auto;
         max-width: 100%;
     }
 
-    .about-section-4-grid-right {
+    .about-section-4__grid-right {
         grid-row-gap: 2.5rem;
     }
 
-    .about-section-4-grid-right-small {
+    .about-section-4__grid-right-small {
         grid-column-gap: 1.25rem;
         grid-row-gap: 1.25rem;
     }
 
-    .about-section-4-grid-2 {
+    .about-section-4__grid-2 {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         grid-template-columns: 1fr;
     }
 
-    .about-section-4-grid-2-left-img-content-2 {
+    .about-section-4__grid-2-left-img-content-2 {
         margin-right: 0;
     }
 
-    .about-section-4-grid-2-left-img-1 {
+    .about-section-4__grid-2-left-img-1 {
         height: auto;
     }
 
     /*  <!-- === about section 4 end === --> */
 
     /*  <!-- === about section 5 start === --> */
-    .about-section-5-grid {
+    .about-section-5__grid {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         flex-direction: column;
@@ -1199,16 +1199,16 @@
         display: flex;
     }
 
-    .about-section-5-grid-left {
+    .about-section-5__grid-left {
         grid-row-gap: 5rem;
         padding-bottom: 0;
     }
 
-    .about-section-5-grid-right {
+    .about-section-5__grid-right {
         height: 24.6744rem;
     }
 
-    img.about-section-5-grid-right-center-img-1 {
+    img.about-section-5__grid-right-center-img-1 {
         max-width: 16.375rem;
         object-fit: contain;
     }
@@ -1220,7 +1220,7 @@
         height: 3.125rem;
     }
 
-    .contact-form-heading {
+    .contact-form__heading {
         font-size: 1.75rem;
     }
 
@@ -1241,7 +1241,7 @@
 
 
     /*  <!-- === contact section 2 start === --> */
-    .contact-section-2-grid {
+    .contact-section-2__grid {
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
         flex-direction: column;
@@ -1249,7 +1249,7 @@
         display: flex;
     }
 
-    .contact-section-2-grid-left {
+    .contact-section-2__grid-left {
         grid-column-gap: 3.5rem;
         grid-row-gap: 3.5rem;
         padding-top: 5rem;
@@ -1261,7 +1261,7 @@
         font-size: 1.5rem;
     }
 
-    .contact-section-2-img {
+    .contact-section-2__img {
         height: auto;
     }
 
@@ -1269,12 +1269,12 @@
 
 
     /*  <!-- === philosophy section 1 start === --> */
-    .philoshopy-section-1 {
+    .philoshopy-section__1 {
         height: 58vh;
         margin-top: 3.9rem;
     }
 
-    .philoshopy-section-1-text-block {
+    .philoshopy-section-1__text-block {
         max-width: none;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -1286,29 +1286,29 @@
         line-height: 1.15;
     }
 
-    .philoshopy-section-1-img-1 {
+    .philoshopy-section-1__img-1 {
         max-width: 11.7131rem;
         bottom: 4.0625rem;
         left: -2.5875rem;
     }
 
-    .philoshopy-section-1-img-2 {
+    .philoshopy-section-1__img-2 {
         max-width: 7.375rem;
         bottom: 2.4375rem;
         right: -2.5rem;
     }
 
-    .philoshopy-section-1-img-3 {
+    .philoshopy-section-1__img-3 {
         display: none;
     }
 
-    .philoshopy-section-1-img-4 {
+    .philoshopy-section-1__img-4 {
         max-width: 13.25rem;
         top: 4.625rem;
         left: -6.675rem;
     }
 
-    .philoshopy-section-1-img-5 {
+    .philoshopy-section-1__img-5 {
         max-width: 12.545rem;
         top: 2.5rem;
         right: -15em;
@@ -1318,50 +1318,50 @@
 
 
     /*  <!-- === philosophy section 2 start === --> */
-    .philoshopy-section-2-card-grid {
+    .philoshopy-section-2__card-grid {
         grid-column-gap: 2.5rem;
         grid-row-gap: 2.5rem;
         flex-direction: column;
         display: flex;
     }
 
-    .philoshopy-section-2-card-grid-reverse {
+    .philoshopy-section-2__card-grid-reverse {
         flex-direction: column-reverse
     }
 
-    .philoshopy-section-2-card-aliment-left {
+    .philoshopy-section-2__card-aliment-left {
         align-items: center
     }
 
-    .philoshopy-section-2-card-grid-left img {
+    .philoshopy-section-2__card-grid-left img {
         height: auto;
     }
 
-    .philoshopy-section-2-card-grid-right-text {
+    .philoshopy-section-2__card-grid-right-text {
         grid-column-gap: 1.25rem;
         grid-row-gap: 1.25rem;
     }
 
-    .philoshopy-section-2-card-grid-right-text h5 {
+    .philoshopy-section-2__card-grid-right-text h5 {
         font-size: 1.75rem;
     }
 
-    .philoshopy-section-2-card-grid-right-text-large {
+    .philoshopy-section-2__card-grid-right-text-large {
         font-size: 1rem;
     }
 
-    .philoshopy-section-2-bottom-grid {
+    .philoshopy-section-2__bottom-grid {
         grid-template-columns: 1fr;
     }
 
-    .philoshopy-section-2-bottom-card {
+    .philoshopy-section-2__bottom-card {
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
         padding-top: 1.5rem;
         padding-right: 0;
     }
 
-    .philoshopy-section-2-bottom-card-img {
+    .philoshopy-section-2__bottom-card-img {
         width: 3rem;
         height: 3rem;
     }
@@ -1369,37 +1369,37 @@
     /*  <!-- === philosophy section 2 end === --> */
 
     /*  <!-- === philosophy section 3 start === --> */
-    .philoshopy-section-3-slider-main-slide {
+    .philoshopy-section-3__slider-main-slide {
         margin-top: 5rem;
     }
 
-    .philoshopy-section-3-slider-wrapper-card-content {
+    .philoshopy-section-3__slider-wrapper-card-content {
         height: 20rem;
         padding: 2rem;
     }
 
-    .philoshopy-section-3-card-flex {
+    .philoshopy-section-3__card-flex {
         grid-column-gap: 2.0625rem;
         grid-row-gap: 2.0625rem;
         align-items: center;
         width: 100%;
     }
 
-    img.philoshopy-section-3-card-flex-img {
+    img.philoshopy-section-3__card-flex-img {
         max-width: none;
     }
 
-    .philoshopy-section-3-partner {
+    .philoshopy-section-3__partner {
         grid-column-gap: .375rem;
         grid-row-gap: .375rem;
         padding: .53125rem .625rem;
     }
 
-    .philoshopy-section-3-card-content-text-full {
+    .philoshopy-section-3__card-content-text-full {
         font-size: 1rem;
     }
 
-    .philoshopy-section-3-card-flex>img {
+    .philoshopy-section-3__card-flex>img {
         max-width: none;
     }
 
@@ -1408,7 +1408,7 @@
 
     /*  <!-- === philosophy section 4 start === --> */
 
-    .phiphiloshopy-section-4-bottom-top-main {
+    .phiphiloshopy-section-4__bottom-top-main {
         grid-column-gap: 0rem;
         grid-row-gap: 0rem;
         flex-direction: column;
@@ -1417,7 +1417,7 @@
 
 
 
-    .phiphiloshopy-section-4-bottom-top-main-box {
+    .phiphiloshopy-section-4__bottom-top-main-box {
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
         border-bottom: 1px solid #383f3d;
@@ -1426,7 +1426,7 @@
         padding-bottom: 2.5rem;
     }
 
-    h3.text-colour-white.phiphiloshopy-section-4-bottom-top-main-box-content-text-top {
+    h3.text-colour-white.phiphiloshopy-section-4__bottom-top-main-box-content-text-top {
         font-size: 1.5rem;
     }
 
@@ -1434,22 +1434,22 @@
         display: none;
     }
 
-    .phiphiloshopy-section-4-bottom-top-main.phiphiloshopy-section-4-bottom-top-main-margin {
+    .phiphiloshopy-section-4__bottom-top-main.phiphiloshopy-section-4__bottom-top-main-margin {
         margin: 0;
         max-width: 100%;
     }
 
-    .phiphiloshopy-section-4-space-remove {
+    .phiphiloshopy-section-4__space-remove {
         display: none;
     }
 
     /*  <!-- === philosophy section 4 end === --> */
     /* ethy section 1 start */
-    .ethy-section-1-bottom-grid-3 {
+    .ethy-section-1__bottom-grid-3 {
         grid-template-columns: 1fr;
     }
 
-    .ethy-section-1-bottom-grid-2 {
+    .ethy-section-1__bottom-grid-2 {
         row-gap: 0;
     }
 
@@ -1465,39 +1465,39 @@
         padding-top: 9em;
     }
 
-    .ethy-section-1-top-grid {
+    .ethy-section-1__top-grid {
         column-gap: 3.125rem;
         row-gap: 3.125rem;
         flex-direction: column-reverse;
         display: flex;
     }
 
-    .ethy-section-1-top {
+    .ethy-section-1__top {
         height: auto;
     }
 
-    .ethy-section-1-top-grid-right-img-inner {
+    .ethy-section-1__top-grid-right-img-inner {
         height: auto;
     }
 
-    h3.ethy-section-1-bottom-head {
+    h3.ethy-section-1__bottom-head {
         font-size: 1.75rem;
     }
 
-    .ethy-section-1-bottom-head {
+    .ethy-section-1__bottom-head {
         font-size: 1.75rem;
     }
 
-    .ethy-section-1-bottom {
+    .ethy-section-1__bottom {
         max-width: none;
     }
 
-    .ethy-section-1-top-grid-left {
+    .ethy-section-1__top-grid-left {
         padding-bottom: 3.125rem;
         padding-right: 1.25rem;
     }
 
-    .ethy-section-1-top-grid-left-head {
+    .ethy-section-1__top-grid-left-head {
         grid-column-gap: 3rem;
         grid-row-gap: 3rem;
     }
@@ -1510,28 +1510,28 @@
 
     /* ethy section 2 start */
 
-    .ethy-section-2-flex {
+    .ethy-section-2__flex {
         flex-direction: column;
     }
 
-    .ethy-section-2-flex-left {
+    .ethy-section-2__flex-left {
         max-width: none;
         margin-bottom: 3.125rem;
     }
 
-    .ethy-section-2-flex-right img {
+    .ethy-section-2__flex-right img {
         width: auto;
     }
 
-    .ethy-section-2-flex-left-point {
+    .ethy-section-2__flex-left-point {
         padding-bottom: 1.5rem;
     }
 
-    .ethy-section-2-flex-left-point p {
+    .ethy-section-2__flex-left-point p {
         font-size: 0.9375rem;
     }
 
-    .ethy-section-2-flex-left-point-main {
+    .ethy-section-2__flex-left-point-main {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         font-size: 1.05rem;
@@ -1542,32 +1542,32 @@
 
     /* ethy section slider start */
 
-    .ethy-section-slider-main-slider-card-holder-main-img {
+    .ethy-section-slider__main-slider-card-holder-main-img {
         height: auto;
     }
 
     /* ethy section slider end */
     /* ethy section 3 start */
-    .ethy-section-3-wrapper {
+    .ethy-section-3__wrapper {
         column-gap: 1.5rem;
         row-gap: 1.5rem;
         flex-direction: column;
         display: flex;
     }
 
-    .ethy-section-3-wrapper-inner {
+    .ethy-section-3__wrapper-inner {
         padding-top: 1.5rem;
     }
 
-    .ethy-section-3-wrapper-inner-conten {
+    .ethy-section-3__wrapper-inner-conten {
         font-size: 1rem;
     }
 
-    .ethy-section-3-wrapper-inner-heading {
+    .ethy-section-3__wrapper-inner-heading {
         font-size: 0.9375rem;
     }
 
-    .ethy-section-3-wrapper-inner-heading-text p {
+    .ethy-section-3__wrapper-inner-heading-text p {
         font-size: 1rem;
     }
 
@@ -1575,7 +1575,7 @@
 
     /* nomi section 2 start */
 
-    .nomi-section-2-grid {
+    .nomi-section-2__grid {
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
         flex-direction: column;
@@ -1593,18 +1593,18 @@
         grid-template-columns: 1fr
     }
 
-    .nomi-section-3-main {
+    .nomi-section-3__main {
         margin-top: 1.5rem;
     }
 
     /* nomi section 3 end */
 
     /* nomi section 4 start */
-    .ethy-section-2-flex-right.nomi-section-2-flex-right img {
+    .ethy-section-2__flex-right.nomi-section-2__flex-right img {
         width: 100%;
     }
 
-    .ethy-section-2-flex-right.nomi-section-2-flex-right {
+    .ethy-section-2__flex-right.nomi-section-2__flex-right {
         height: 130em;
     }
 
@@ -1624,7 +1624,7 @@
 
 
 @media screen and (max-width: 479px) {
-    .philoshopy-section-1 {
+    .philoshopy-section__1 {
         height: 57.1875rem;
     }
 
@@ -1645,7 +1645,7 @@
     }
 
 
-    .ethy-section-slider-main-slider-card-holder-main-img {
+    .ethy-section-slider__main-slider-card-holder-main-img {
         height: 400px;
         width: 100%;
     }
@@ -1654,19 +1654,19 @@
         margin-top: 2rem;
     }
 
-    .ethy-section-slider-main-slider-card-holder-main {
+    .ethy-section-slider__main-slider-card-holder-main {
         padding: 0.5rem 0.5rem 1rem;
     }
 
-    .ethy-section-slider-main-slider-card-holder-main-text-1 {
+    .ethy-section-slider__main-slider-card-holder-main-text-1 {
         font-size: 1.2rem;
     }
 
-    .ethy-section-slider-main-head-counter-holder-number {
+    .ethy-section-slider__main-head-counter-holder-number {
         font-size: 1.125rem;
     }
 
-    .ethy-section-slider-main-head {
+    .ethy-section-slider__main-head {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }

@@ -11,7 +11,7 @@ gsap.from(".hero-animate-right", {
 });
 // < === === button hover effect start === ===>
 document.addEventListener('mouseover', (e) => {
-    const button = e.target.closest('.header-nav-button, .common-btn, .slider-button-ancore');
+    const button = e.target.closest('.header__nav-button, .common-btn, .slider-button-ancore');
     if (button) {
         const arrows = button.querySelectorAll('.arrow-icon');
         button.style.opacity = '0.7';
@@ -22,7 +22,7 @@ document.addEventListener('mouseover', (e) => {
 });
 
 document.addEventListener('mouseout', (e) => {
-    const button = e.target.closest('.header-nav-button, .common-btn, .slider-button-ancore');
+    const button = e.target.closest('.header__nav-button, .common-btn, .slider-button-ancore');
     if (button) {
         const arrows = button.querySelectorAll('.arrow-icon');
         button.style.opacity = '1';
@@ -61,7 +61,6 @@ if (document.querySelector(".crafted-ready-section__right_img img")) {
 
 // <=== Scroll Smooth Start ===>
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-// Change start: Save ScrollSmoother instance to control background scroll - 03-06-2026
 const smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
@@ -73,25 +72,23 @@ const smoother = ScrollSmoother.create({
     speed: 1,
     ease: "expo.out"
 });
-// Change end - 03-06-2026
 // <=== Scroll Smooth End ===>
 
 // < === === mobile menu toggle start === ===>
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenuBtn = document.querySelector('.mobile-menu__btn');
 const mobileMenuOverlay = document.querySelector('#mobileMenu');
 let isMobileMenuOpen = false;
 
 if (mobileMenuBtn && mobileMenuOverlay) {
     const updateMobileMenuTop = () => {
-        const headerHeight = document.querySelector('.header-main').offsetHeight;
+        const headerHeight = document.querySelector('.header').offsetHeight;
         mobileMenuOverlay.style.top = `${headerHeight - 1}px`;
     };
 
     mobileMenuBtn.addEventListener('click', () => {
         updateMobileMenuTop();
         if (!isMobileMenuOpen) {
-            // Change start: Calculate correct height and pause background scroll - 03-06-2026
-            const headerHeight = document.querySelector('.header-main').offsetHeight;
+            const headerHeight = document.querySelector('.header').offsetHeight;
             if (typeof smoother !== 'undefined' && smoother) {
                 smoother.paused(true);
             }
@@ -100,18 +97,18 @@ if (mobileMenuBtn && mobileMenuOverlay) {
                 duration: 0.8,
                 ease: "power4.inOut"
             });
-            // Change end - 03-06-2026
-            gsap.fromTo('.mobile-menu-item',
+
+            gsap.fromTo('.mobile-menu__item',
                 { y: 20, opacity: 0 },
                 { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, delay: 0.3, ease: "power2.out" }
             );
             isMobileMenuOpen = true;
             document.body.style.overflow = 'hidden';
 
-            // Animation for the button lines (optional)
+            
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 0.5 });
         } else {
-            // Change start: Reset height and resume background scroll - 03-06-2026
+            
             if (typeof smoother !== 'undefined' && smoother) {
                 smoother.paused(false);
             }
@@ -120,23 +117,21 @@ if (mobileMenuBtn && mobileMenuOverlay) {
                 duration: 0.6,
                 ease: "power4.inOut"
             });
-            // Change end - 03-06-2026
+            
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 1 });
         }
     });
 
-    // Close menu when clicking outside or on a link (optional, depends on UX)
     window.addEventListener('resize', () => {
         if (window.innerWidth > 991 && isMobileMenuOpen) {
-            // Change start: Reset mobile menu height, class and unpause scroll smoother on resize - 03-06-2026
             mobileMenuOverlay.classList.remove('is-open');
             gsap.set(mobileMenuOverlay, { height: 0 });
             if (typeof smoother !== 'undefined' && smoother) {
                 smoother.paused(false);
             }
-            // Change end - 03-06-2026
+            
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
         }
@@ -241,8 +236,8 @@ mm.add("(min-width: 768px)", () => {
 
 
 // < === === models dropdown animation start === ===>
-const headerMain = document.querySelector('.header-main');
-const modelsLink = document.querySelectorAll('.header-nav-link')[0];
+const headerMain = document.querySelector('.header');
+const modelsLink = document.querySelectorAll('.header__nav-link')[0];
 const modelsDropdown = document.querySelector('#modelsDropdown');
 let isDropdownOpen = false;
 
@@ -287,7 +282,7 @@ if (modelsLink && modelsDropdown && headerMain) {
 ScrollTrigger.create({
     start: 'top -80',
     onUpdate: (self) => {
-        const header = document.querySelector('.header-main');
+        const header = document.querySelector('.header');
         const modelsDropdown = document.querySelector('#modelsDropdown');
 
         if (self.direction === 1) {
@@ -317,11 +312,11 @@ if (aboutHeroSection) {
         trigger: aboutHeroSection,
         start: 'bottom top',
         onEnter: () => {
-            const header = document.querySelector('.header-main');
+            const header = document.querySelector('.header');
             if (header) header.classList.remove('about-us-transparent');
         },
         onEnterBack: () => {
-            const header = document.querySelector('.header-main');
+            const header = document.querySelector('.header');
             if (header) header.classList.add('about-us-transparent');
         }
     });
@@ -329,7 +324,7 @@ if (aboutHeroSection) {
 // < === === about page transparent navbar animation end === ===>
 
 // < === === slider swiper initialization start === ===>
-const swiperMain = new Swiper(".cx-slider-swiper.swiper", {
+const swiperMain = new Swiper(".cx-slider__swiper.swiper", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 40,
@@ -343,7 +338,7 @@ const swiperMain = new Swiper(".cx-slider-swiper.swiper", {
 
 
 // < === === custom cursor logic start === ===>
-// (Moved to the end of the file to prevent ReferenceError)
+
 // < === === custom cursor logic end === ===>
 
 
@@ -367,7 +362,7 @@ if (modelsToggle && modelsSubmenu) {
 
 
 // < === === philoshopy section 1 animation start === ===>
-const parallaxSection1 = document.querySelector('.philoshopy-section-1');
+const parallaxSection1 = document.querySelector('.philoshopy-section__1');
 const parallaxImages1 = document.querySelectorAll('.parallax-img');
 
 if (parallaxSection1 && parallaxImages1.length > 0) {
@@ -458,12 +453,12 @@ const initRevealAnimations = () => {
         }
     });
 
-    if (document.querySelector(".footer-section-img")) {
-        gsap.from(".footer-section-img", {
+    if (document.querySelector(".footer-section__img")) {
+        gsap.from(".footer-section__img", {
             opacity: 0,
             duration: 1.5,
             scrollTrigger: {
-                trigger: ".footer-section-img",
+                trigger: ".footer-section__img",
                 start: "top 90%",
                 end: "top 60%",
                 toggleActions: "play none none none",
@@ -492,14 +487,12 @@ const initRevealAnimations = () => {
 window.addEventListener("load", () => {
     initRevealAnimations();
 
-    // Slight delay before refreshing to ensure smooth-scroll and all images have adjusted the layout
     setTimeout(() => {
         ScrollTrigger.refresh();
     }, 200);
 });
 // < === === reveal animation end === ===>
 
-// filter tabs start
 document.addEventListener("DOMContentLoaded", () => {
     const tabsContainer = document.querySelector(".tabs");
     if (!tabsContainer) return;
@@ -513,7 +506,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeTab = tabsContainer.querySelector("ul li a.activ") || tabs[0];
     if (!activeTab.classList.contains("activ")) activeTab.classList.add("activ");
 
-    // Initialize layout
     const initialContent = document.getElementById(activeTab.dataset.tab);
     if (initialContent) {
         contents.forEach(c => gsap.set(c, { display: "none", opacity: 0 }));
@@ -523,8 +515,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const moveUnderline = (targetTab, animate = true) => {
         if (!targetTab || !underline) return;
-        // Using offsetLeft is much safer here because getBoundingClientRect
-        // can be affected by GSAP ScrollSmoother's translate operations.
         const left = targetTab.offsetLeft;
         const width = targetTab.offsetWidth;
 
@@ -543,7 +533,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Setup initial underline position (slight delay ensures fonts have loaded and widths are correct)
     setTimeout(() => {
         moveUnderline(activeTab, false);
     }, 100);
@@ -557,21 +546,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetContent = document.getElementById(tab.dataset.tab);
             if (!targetContent) return;
 
-            // Update Tab State
             activeTab.classList.remove("activ");
             tab.classList.add("activ");
             activeTab = tab;
 
-            // Animate Underline
             moveUnderline(activeTab);
 
-            // Hide old content instantly, but fade in the new one
             contents.forEach(c => {
                 c.classList.remove("activ");
                 gsap.set(c, { display: "none", opacity: 0 });
             });
 
-            // Show new content
             targetContent.classList.add("activ");
             gsap.set(targetContent, { display: "block", y: 15, opacity: 0 });
 
@@ -581,7 +566,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 duration: 0.4,
                 ease: "power2.out",
                 onComplete: () => {
-                    // Critical for smooth scrolling: tell GSAP body height changed!
                     if (typeof ScrollTrigger !== 'undefined') {
                         ScrollTrigger.refresh();
                     }
@@ -598,10 +582,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // < === === custom cursor logic start === ===>
-const sliderSection = document.querySelector('.cx-slider-section');
+const sliderSection = document.querySelector('.cx-slider__section');
 const cursor = document.querySelector('.cursor');
 const cursorDot = document.querySelector('.cursor-dot');
-const swiperContainer = document.querySelector('.cx-slider-swiper.swiper');
+const swiperContainer = document.querySelector('.cx-slider__swiper.swiper');
 
 if (sliderSection && cursor && cursorDot) {
     const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
