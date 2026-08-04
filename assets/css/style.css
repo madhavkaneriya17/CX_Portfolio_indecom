@@ -944,7 +944,9 @@ html.w-mod-touch * {
 /* === parallax-section start === */
 .parallax-section {
     background-color: #192120;
-    height: 400vh;
+    height: auto;
+    padding-top: 8em;
+    padding-bottom: 8em;
     padding-left: 1.5em;
     padding-right: 1.5em;
     position: relative;
@@ -955,16 +957,14 @@ html.w-mod-touch * {
     justify-content: flex-start;
     align-items: center;
     display: flex;
-    position: sticky;
-    top: 0;
+    position: relative;
 }
 
 .preallax-animation {
     flex-direction: column;
     width: 100%;
     display: flex;
-    position: sticky;
-    top: 0;
+    position: relative;
 }
 
 .pareallax-block {
@@ -974,6 +974,7 @@ html.w-mod-touch * {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    cursor: pointer;
 }
 
 .pareallax-block.are-1 {
@@ -1742,6 +1743,7 @@ html.w-mod-touch * {
 
 .eco-img {
     width: 3em;
+    object-fit: cover;
 }
 
 .about-section-5__grid-left-bottom-flex p {
@@ -1781,9 +1783,6 @@ html.w-mod-touch * {
     max-width: 31.5em;
     object-fit: cover;
 }
-
-
-
 
 /* ============================== */
 
@@ -1836,7 +1835,6 @@ html.w-mod-touch * {
     transition: padding-left 0.3s ease;
 }
 
-
 .mobile-menu__item span {
     display: flex;
     align-items: center;
@@ -1880,9 +1878,6 @@ html.w-mod-touch * {
 .mobile-menu__item {
     cursor: pointer;
 }
-
-
-
 
 /*  <!-- === contact section 1 start === --> */
 
@@ -2620,7 +2615,7 @@ select:not(:-internal-list-box):not([multiple]) option {
 }
 
 .ethy-section-2__flex-right img {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
     width: 35.375em;
     max-width: 100%;
@@ -3040,6 +3035,7 @@ select:not(:-internal-list-box):not([multiple]) option {
 .nomi-sec-5__top-bottom-grid-left img {
     width: 100%;
     height: 43.125em;
+    object-fit: contain;
 }
 
 .nomi-sec-5__top-bottom-grid-left p {

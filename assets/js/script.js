@@ -105,10 +105,10 @@ if (mobileMenuBtn && mobileMenuOverlay) {
             isMobileMenuOpen = true;
             document.body.style.overflow = 'hidden';
 
-            
+
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 0.5 });
         } else {
-            
+
             if (typeof smoother !== 'undefined' && smoother) {
                 smoother.paused(false);
             }
@@ -117,7 +117,7 @@ if (mobileMenuBtn && mobileMenuOverlay) {
                 duration: 0.6,
                 ease: "power4.inOut"
             });
-            
+
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
             gsap.to(mobileMenuBtn.querySelector('path'), { duration: 0.3, opacity: 1 });
@@ -131,7 +131,7 @@ if (mobileMenuBtn && mobileMenuOverlay) {
             if (typeof smoother !== 'undefined' && smoother) {
                 smoother.paused(false);
             }
-            
+
             isMobileMenuOpen = false;
             document.body.style.overflow = '';
         }
@@ -148,6 +148,23 @@ let mm = gsap.matchMedia();
 mm.add("(min-width: 768px)", () => {
     const items = document.querySelectorAll(".pareallax-block");
     if (items.length > 0 && document.querySelector(".parallax-section")) {
+        const activateItem = (activeItem) => {
+            items.forEach((item) => {
+                if (item === activeItem) {
+                    gsap.to(item, { height: "46vh", duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector("img"), { height: "42vh", duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector(".pareallax-number"), { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector(".pareallax-text"), { opacity: 1, duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                } else {
+                    gsap.to(item, { height: "17vh", duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector("img"), { height: "13vh", duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector(".pareallax-number"), { scale: 0.47, opacity: 0.62, duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                    gsap.to(item.querySelector(".pareallax-text"), { opacity: 0.4, duration: 0.6, ease: "power2.out", overwrite: "auto" });
+                }
+            });
+        };
+
+        // Initialize state
         items.forEach((item, index) => {
             if (index === 0) {
                 gsap.set(item, { height: "46vh" });
@@ -162,73 +179,20 @@ mm.add("(min-width: 768px)", () => {
             }
         });
 
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".parallax-section",
-                start: "top top",
-                end: "bottom bottom",
-                pin: ".parallax-container",
-                scrub: 1
-            }
+        // Add hover triggers
+        items.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                activateItem(item);
+            });
         });
 
-        items.forEach((item, index) => {
-            if (index === items.length - 1) return;
-
-            const nextItem = items[index + 1];
-
-            tl.to(item, {
-                height: "17vh",
-                duration: 1,
-                ease: "power2.inOut"
-            }, index)
-
-                .to(item.querySelector("img"), {
-                    height: "13vh",
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-                .to(item.querySelector(".pareallax-number"), {
-                    scale: 0.47,
-                    opacity: 0.62,
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-                .to(item.querySelector(".pareallax-text"), {
-                    opacity: 0.4,
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-                .to(nextItem, {
-                    height: "46vh",
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-
-                .to(nextItem.querySelector("img"), {
-                    height: "42vh",
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-                .to(nextItem.querySelector(".pareallax-number"), {
-                    scale: 1,
-                    opacity: 1,
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index)
-
-
-                .to(nextItem.querySelector(".pareallax-text"), {
-                    opacity: 1,
-                    duration: 1,
-                    ease: "power2.inOut"
-                }, index);
-        });
+        // Reset to first item when mouse leaves the section container
+        const container = document.querySelector(".preallax-animation");
+        if (container) {
+            container.addEventListener("mouseleave", () => {
+                activateItem(items[0]);
+            });
+        }
     }
 });
 // < === === pareallax animation end === ===>
